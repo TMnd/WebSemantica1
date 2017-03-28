@@ -1,0 +1,40 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>{{ title }}</h2>
+        <form action="{% url 'grafos' %}" method="post">
+            {% csrf_token %}
+            <select name="grafo1" id="grafo1">
+                <option value=""> Select Graph </option>
+                <option value="HomeTeam"> Home Team </option>
+                <option value="AwayTeam"> Away Team </option>
+                <option value="FTHG"> Full Time Home Team Goals </option>
+                <option value="FTAG"> Full Time Away Team Goals </option>
+                <option value="FTR"> Full Time Result </option>
+                <option value="HTHG"> Half Time Home Team Goals </option>
+                <option value="HTAG"> Half Time Away Team Goals </option>
+                <option value="HTR"> Half Time Result </option>
+                <option value="B365H"> Bet365 home win odds </option>
+                <option value="B365D"> Bet365 draw odds </option>
+                <option value="B365A"> Bet365 away win odds </option>
+            </select>
+            <input type="submit" name ="grafo" value="Submit">
+        </form>
+    </div>
+    <div>
+        {% if is_true %}        
+            <script>alert("Clicou no botao")</script>
+        {% endif %}
+        {% load static %}
+        {% if url %}        
+            <img src="{% static url %}"  width="1200" height="1200" align="middle">
+        {% endif %} 
+    </div>
+</div>
+{% endblock %}
