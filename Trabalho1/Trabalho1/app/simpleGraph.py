@@ -5,178 +5,128 @@ from graphviz import Source
 import csv
 
 class simpleGraph:
-    # Indices
     def __init__(self):
-        self._spo = {}  # spo é o sujeito, predicado e object
-        self._pos = {}  # pos é o predicado, object e sujeito
-        self._osp = {}  # osp é o object, sujeito e predicado
+        self._spo = []  # subject – predicate - object
+        self._pos = []
+        self._osp = []
 
-    # Inserir Triplos
-    def _inserirToIndex(self, index, subject, predicate, object):
-        if subject not in index:  # se o sujeito nao se encontra no indice
-            index[subject] = {predicate: set([object])}  # na lista do subject que nao esteja no indice cria-se uma lista com id predicado cujo valor é object
-        elif predicate not in index[subject]:  # se o sujeito nao se encontra no indice sujeito
-            index[subject][predicate] = set([object])
-        else:  # se o sujeito e o predicato estiverem na lista
-            index[subject][predicate].add(object)
+        self._spx = []
+        # self._spo = (subject:[predicate:set([object])])
+        # self._spo = (subject,[predicate,{object}])
 
-    def add(self, subject, predicate, object):  # para inserir nos indices usando a função inserirToIndex
-        self._inserirToIndex(self._spo, subject, predicate, object);
-        self._inserirToIndex(self._pos, predicate, object, subject);
-        self._inserirToIndex(self._osp, object, subject, predicate);
+        # self._pos = (predicate:[object:set([subject])])
+        # self._pos = (predicate,[object,{subject}])
 
-    # Remover Triplos
-    def remove(self, subject, predicate, object):
-        triples = list(self.triples(subject, predicate, object))
-        for (delsubject, delpredicate, delobject) in triples:
-            self._removeFromIndex(self._spo, delsubject, delpredicate, delobject)
-            self._removeFromIndex(self._pos, delpredicate, delobject, delsubject)
-            self._removeFromIndex(self._osp, delobject, delsubject, delpredicate)
+        # self._osp = (object:[subject:set([predicate])])
+        # self._osp = (object,[subject,{predicate}])
 
-    def _removeFromIndex(self, index, subject, predicate, object):
-        try:
-            bs = index[subject]  # bs = sera o indice do subjeito (incluindo os predicados e os obejctos)
-            cset = bs[predicate]  # cset = sera o objecto relaciodo com o predicado que por sua vez é relacionado pelo sujeito
-            cset.remove(object)  # remove o objecto
-            if len(cset) == 0:  # Verifica se o existe objectos, se nao existir apagase o predicado
-                del bs[predicate]
-            if len(bs) == 0:  # Verifica se existe predicados, se nao existir apagase o sujeito
-                del index[subject]
-        except KeyError:
-            pass
+    def add(self, sub, pred, obj):
+        self._addToIndex(self._spo, sub, pred, obj)  # SPO SPO
+        self._addToIndex(self._pos, pred, obj, sub)  # POS POS
+        self._addToIndex(self._osp, obj, sub, pred)  # OSP OSP
 
-    # Pesquisar
+        self._addAll(self._spx, sub, pred, obj)
+        """ índice com listas (lista de listas) em que cada lista dentro do 
+        índice é um triplo"""
+
+    def _addToIndex(self, index, s, p, o):
+
+        if s not in index:
+            index.append(s)
+            index.append([p, {o}])
+        else:
+            tmp = []
+            for i in index:
+                if str(type(i)) == "<class 'list'>":
+                    tmp.append(i[0])
+                    if p in i:
+                        i[1].add(o)
+            if p not in tmp:
+                        index.append([p, {o}])
+
+    def _addAll(self, index, s, p, o):
+        index.append([s, p, o]) # adiciona triplos ao índice
+
     def triples(self, sub, pred, obj):
-        try:
+
+        """verificar antes de tudo se sub, pred e obj são None, como estava no código do professor na última condição 
+        aquilo fazia sempre yield de todos os tuplos mesmo que a função triples não fosse chamada 
+        x.triples(None, None, None)
+        
+        Para todos os casos nesta função é apenas comparado dentro do índice self._spx, dentro de cada lista, 
+        se qualquer variante de sub, pred, obj é igual a i[0], i[1] ou i[2], respetivamente"""
+
+        if sub == None and pred == None and obj == None:
+            #print(self._spx)
+            for i in self._spx:
+                yield tuple(i)  # None None None
+
+        else:
+
             if sub != None:
                 if pred != None:
-                    # sub pred obj
                     if obj != None:
-                        if obj in self._spo[sub][pred]:
-                            yield (sub, pred, obj)
-                        # sub pred None
-                        else:
-                            for retObj in self._spo[sub][pred]:
-                                yield (sub, pred, retObj)
-                else:
-                    # sub None obj
-                    if obj != None:
-                        for retPred in self._osp[obj][sub]:
-                            yield (sub, retPred, obj)
-                    # sub None None
+                        #print(self._spo)
+                        tmp = self._spx.copy()
+                        # print(tmp)
+                        for i in tmp:
+                            if i[0] == sub and i[1] == pred and i[2] == obj:
+                                yield tuple(i)  # FEITO (Sub Pred Obj)
                     else:
-                        for retPred, objSet in self._spo[sub].items():
-                            for retObj in objSet:
-                                yield (sub, retPred, retObj)
+                        # print(self._spo)
+                        tmp = self._spx.copy()
+                        # print(tmp)
+                        for i in tmp:
+                            if i[0] == sub and i[1] == pred:
+                                yield tuple(i)  # FEITO (Sub Pred None)
+                else:
+                    if obj != None:
+                        # print(self._osp)
+                        # for retPred in self._osp[obj][sub]:
+                        # yield (sub, retPred, obj)  # sub None obj
+                        tmp = self._spx.copy()
+                        # print(tmp)
+                        for i in tmp:
+                            if i[0] == sub and i[2] == obj:
+                                yield tuple(i)  # FEITO (Sub None Obj)
+                    else:
+                        # for retPred, objSet in self._spo[sub].items():
+                        # for retObj in objSet:
+                        # yield (sub, retPred, retObj)  # sub None None
+                        #print(self._osp)
+                        tmp = self._spx.copy()
+                        # print(tmp)
+                        for i in tmp:
+                            if i[0] == sub:
+                                yield tuple(i)  # FEITO (Sub None None)
             else:
                 if pred != None:
-                    # None pred obj
                     if obj != None:
-                        for retSub in self._pos[pred][obj]:
-                            yield (retSub, pred, obj)
-                    # None pred None
+                        tmp = self._spx.copy()
+                        # print(tmp)
+                        for i in tmp:
+                            if i[1] == pred and i[2] == obj:
+                                yield tuple(i)  # FEITO (None Pred Obj)
                     else:
-                        for retObj, subSet in self._pos[pred].items():
-                            for retSub in subSet:
-                                yield (retSub, pred, retObj)
+                        tmp = self._spx.copy()
+                        #print(tmp)
+                        for i in tmp:
+                            if i[1] == pred:
+                                yield tuple(i) # FEITO (None Pred None)
                 else:
-                    # None None obj
-                    if obj != None:
-                        for retSub, predSet in self._osp[obj].items():
-                            for retPred in predSet:
-                                yield (retSub, retPred, obj)
-                    # None None None
-                    else:
-                        for retSub, predSet in self._spo.items():
-                            for retPred, ObjSet in predSet.items():
-                                for retObj in ObjSet:
-                                    yield (retSub, retPred, retObj)
-        except KeyError:
-            pass
-        
+                    tmp = self._spx.copy()
+                    #print(tmp)
+                    for i in tmp:
+                        if i[2] == obj:
+                            yield tuple(i) # FEITO (None None obj)
+    
+    #Listar todos os tiplos em memoria
     def listaTriplos(self):
         for sub in self.triples(None, None, None):
             yield (sub)
             #print(sub)
 
-    #def __init__(self):
-    #    self._spo = []  # subject � predicate - object
-    #    self._pos = []
-    #    self._osp = []
-
-    #Adcionar novos triplos na tripleStore
-    #def add(self, sub, pred, obj):
-    #    self._addToIndex(self._spo, sub, pred, obj)
-    #    self._addToIndex(self._pos, pred, obj, sub)
-    #    self._addToIndex(self._osp, obj, sub, pred)
-
-    #def _addToIndex(self, index, a, b, c):
-    #    if a not in index:
-    #        index.append(a)
-    #        index.append([b, {c}])
-    #    else:
-    #        tmp = []
-    #        for i in index:
-    #            if str(type(i)) == "<class 'list'>":
-    #                tmp.append(i[0])
-    #                if b in i:
-    #                    i[1].add(c)
-    #        if b not in tmp:
-    #                    index.append([b, {c}])
-
-    # Remover Triplos da tripleStore
-    #def remove(self, subject, predicate, object):
-    #    triples = list(self.triples(subject, predicate, object))
-    #    print("Tamanho do triple: " + str(len(triples)))
-    #    for i in range(len(triples)):
-    #        print("resultado dos triplos: ")
-    #        print(triples[i])
-    #    for (delsubject, delpredicate, delobject) in triples:
-    #        print ("testeeeee")
-    #        self._removeFromIndex(self._spo, delsubject, delpredicate, delobject)
-        #    self._removeFromIndex(self._pos, delpredicate, delobject, delsubject)
-         #   self._removeFromIndex(self._osp, delobject, delsubject, delpredicate)
-
-    #def _removeFromIndex(self, index, subject, predicate, object):
-    #    print("index: " + str(index))
-    #    print("subject: " + str(subject))
-    #    print("0: " + str(index[0]))
-    #    print("00: " + str(index[subject:]))
-    #    print("1: " + str(index[1]))
-    #    print("1:0 : " + str(index[1][0]))
-    #    print("1:1 : " + str(index[1][1]))
-        #try:
-            #bs = index[subject]  # bs = sera o indice do subjeito (incluindo os predicados e os obejctos)
-            #print ("index: " + str(bs))
-            #cset = bs[predicate]  # cset = sera o objecto relaciodo com o predicado que por sua vez é relacionado pelo sujeito
-            #cset.remove(object)  # remove o objecto
-            #if len(cset) == 0:  # Verifica se o existe objectos, se nao existir apagase o predicado
-                #del bs[predicate]
-            #if len(bs) == 0:  # Verifica se existe predicados, se nao existir apagase o sujeito
-                #del index[subject]
-        #except KeyError:
-            #pass
-        
-    # Pesquisa de triples
-    #def triples(self, sub, pred, obj):
-    #    if sub != None:
-    #        if pred != None:
-    #            if obj != None:
-    #                #print(self._spo)
-    #                tmp = []
-    #                for i in self._spo:
-    #                    if str(type(i)) == "<class 'str'>":
-    #                        if i == sub:
-    #                            tmp.append(i)
-    #                    elif str(type(i)) == "<class 'list'>":
-    #                        if i[0] == pred:
-    #                            tmp.append(i[0])
-    #                            for j in i[1]:
-    #                                if j == obj:
-    #                                    tmp.append(j)
-    #                yield tuple(tmp) # FEITO (sub,pred,obj)
-    
-    #Inserir ficheiros csv para a triplestore
+     #Inserir ficheiros csv para a triplestore
     def load(self, filename):
         aux = 0
         f = open(filename, "r", newline="", encoding="utf-8")
@@ -184,21 +134,68 @@ class simpleGraph:
         reader = csv.reader(f);
         for subject, predicate, object in reader:
             aux = aux + 1
-            if aux % 5000 == 0:
+            if aux % 500 == 0:
                 print("Foi inserido " + str(aux) + " triplos")
             self.add(subject, predicate, object)
         print("Total de triplos na triple store: " + str(aux))
         f.close()
 
-    #Salvar ficheiros csv em base dos triplos
-    #def save(self, filename):
-    #    f = open(filename, "w", newline="", encoding="utf-8")
-    #    writer = csv.writer(f)
-    #    for subject, predicate, obj in self.triples(None, None, None):
-    #        writer.writerow([subject, predicate, obj])
-    #    f.close()
-    
-    #Mostrar a lista de triplos na triple store
-    #def listaTriplos(self):
-    #    for sub in self.triples(None, None, None):
-    #       print(sub)
+    # faz um query ao grafo,
+    # passando-lhe uma lista de tuplos (triplos restrição)
+    # devolve uma lista de dicionarios (var:valor)
+    def query(self, clauses):
+        bindings = None                      # resultado a devolver
+        for clause in clauses:               # para cada triplo
+            bpos = {}                        # dicionário que associa a variável à sua posição no triplo de pesquisa
+            qc = []                          # lista de elementos a passar ao método triples
+            for pos, x in enumerate(clause): # enumera o triplo, para poder ir buscar cada elemento e sua posição
+                if x.startswith('?'):        # para as variáveis
+                    qc.append(None)          # adiciona o valor None à lista de elementos a pssar ao método triples
+#                    bpos[x] = pos            # guarda a posição da variável no triplo (0,1 ou 2)
+                    bpos[x[1:]]=pos          # linha de cima re-escrita porque é necessário guardar o nome da variável, mas sem o ponto de interrogação (?)
+                else:
+                    qc.append(x)             # adiciona o valor dado à lista de elementos a passar ao método triples
+
+            rows = list(self.triples(qc[0], qc[1], qc[2])) # faz a pesquisa com o triplo acabado de construir
+
+            # primeiro triplo pesquisa, todos os resultados servem
+            # para cada triplo resultado, cria um dicionario de variaveis (1 a 3 variaveis)
+            # em cada dicionario, as variaveis tomam o valor devolvido pelo elemento na mesma posicao da variavel
+            if bindings == None:
+                bindings = []                # cria a lista a devolver
+                for row in rows:             # para cada triplo resultado
+                    binding = {}             # cria um dicionario
+                    for var, pos in bpos.items(): # para cada variável e sua posição
+                        binding[var] = row[pos] # associa à variável o valor do elemento do triplo na sua posição
+                    bindings.append(binding) # adiciona o dicionario à lista
+
+            else:                            # triplos pesquisa seguintes, eliminar resultados que não servem
+                # In subsequent passes, eliminate bindings that don't work
+                # Retira da lista dicionários, aqueles que
+                newb = []                    # cria nova lista a devolver
+                for binding in bindings:     # para cada dicionario da lista de dicionarios
+                    for row in rows:         # para cada triplo resultado
+                        validmatch = True    # começa por assumir que o dicionario serve
+                        tempbinding = binding.copy() # faz copia temporaria do dicionario
+                        for var, pos in bpos.items(): # para cada variavel em sua posição
+                            if var in tempbinding: # caso a variavel esteja presente no dicionario
+                                if tempbinding[var] != row[pos]: # se o valor da variavel diferente do valor na sua posicao no triplo
+                                    validmatch = False # o dicionário não serve
+                            else:
+                                tempbinding[var] = row[pos] # associa à variável o valor do elemento do triplo na sua posição
+                        if validmatch:
+                            newb.append(tempbinding) # se dicionario serve, inclui-o na nova lista
+                bindings = newb              # sbstituiu lista por nova
+        return bindings
+
+    # aplica inferencia ao grafo
+    def applyinference(self,rule):
+        queries = rule.getqueries()
+        bindings=[]
+        for query in queries:            
+            bindings += self.query(query)
+        for b in bindings:
+            new_triples = rule.maketriples(b)
+            for s, p, o in new_triples:
+                if s!=None and p!=None and o!=None:
+                    self.add(s, p, o)

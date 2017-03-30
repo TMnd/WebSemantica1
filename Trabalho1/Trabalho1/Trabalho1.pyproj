@@ -31,6 +31,9 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="app\inferencerule.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\simpleGraph.py">
       <SubType>Code</SubType>
     </Compile>

@@ -27,8 +27,8 @@ class removeTripleStore(forms.Form):
     sujeito = forms.CharField(max_length=255)
     predicado = forms.CharField(max_length=255)
     objecto = forms.CharField(max_length=255)
-#formulario de adcionar dados
-#class TESTE_form(forms.Form):                    
-#    Sujeito = forms.CharField(max_length=255)  
-#    Predicado = forms.CharField(max_length=255)
-#    Objecto = forms.CharField(max_length=255)  
+#formulario para pesquisar dados na triple store
+class pesquisarTripleStore(forms.Form):
+    sujeito = forms.CharField(max_length=255)
+    predicado = forms.CharField(max_length=255)
+    objecto = forms.CharField(max_length=255)

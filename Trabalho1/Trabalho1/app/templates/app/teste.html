@@ -22,6 +22,15 @@
             <input type="submit" name ="removerDados" value="Submit">
         </form>
         <hr>
+        <h2>{{titlePesquisarDados}}</h2>
+        <form action="{% url 'teste' %}" novalidate method="post">
+            {% csrf_token %}
+            {{ removeform }}
+            <input type="submit" name ="pesquisarDados" value="Submit">
+        </form>
+        <br />
+        {{listaPesquisa}}
+        <hr>
         <h2>{{titleLista}}</h2>
         {{ listaTriplos }}
     </div>

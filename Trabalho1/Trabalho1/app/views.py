@@ -11,6 +11,7 @@ from datetime import datetime
 from app.simpleGraph import simpleGraph
 from app.forms import addTripleStore
 from app.forms import removeTripleStore
+from app.forms import pesquisarTripleStore
 from pathlib import Path
 from graphviz import Source
 
@@ -97,10 +98,12 @@ def teste(request):
     assert isinstance(request, HttpRequest)
     removeform = removeTripleStore()
     form = addTripleStore()
+    pesquisarform = pesquisarTripleStore()
     if request.method == 'POST':
         if 'inserirDados' in request.POST:
             form = addTripleStore(request.POST)
             lista = []
+            listaPesquisa = []
             if form.is_valid():
                 Sujeito = request.POST.get('Sujeito','')
                 Predicado = request.POST.get('Predicado','')
@@ -109,28 +112,54 @@ def teste(request):
             generador = sg.listaTriplos()
             for i in generador:
                 lista.append(i)
-            return render(request, 'app/teste.html', {'removeform':removeform,'form': form,'Sujeito':Sujeito, 'Predicado':Predicado, 'Objecto':Objecto, 'titleDados':'Lista de triplos','listaTriplos':lista, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos'})
+            return render(request, 'app/teste.html', {'removeform':removeform,'form': form,'Sujeito':Sujeito, 'Predicado':Predicado, 'Objecto':Objecto, 'listaPesquisa':listaPesquisa,'titleDados':'Lista de triplos','listaTriplos':lista, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos da triple store','titlePesquisarDados':'Pesquisar triplos'})
         elif 'removerDados' in request.POST:
             removeform = removeTripleStore(request.POST)
             lista = []
+            listaPesquisa = []
             if removeform.is_valid():
                 rsujeito = request.POST.get('sujeito','')
                 rpredicado = request.POST.get('predicado','')
                 robjecto = request.POST.get('objecto','')
-
             sg.remove(rsujeito,rpredicado,robjecto)
             generador = sg.listaTriplos()
             for i in generador:
                 lista.append(i)
 
-            return render(request, 'app/teste.html', {'listaTriplos':lista,'form': form,'removeform':removeform,'Sujeito':rsujeito, 'Predicado':rpredicado, 'Objecto':robjecto, 'titleDados':'Lista de triplos','listaTriplos':lista, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos da triple store'})
+            return render(request, 'app/teste.html', {'listaTriplos':lista,'form': form,'removeform':removeform,'Sujeito':rsujeito, 'Predicado':rpredicado, 'Objecto':robjecto, 'listaPesquisa':listaPesquisa, 'titleDados':'Lista de triplos','listaTriplos':lista, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos da triple store', 'titlePesquisarDados':'Pesquisar triplos'})
+        elif 'pesquisarDados' in request.POST:
+            pesquisarform = pesquisarTripleStore(request.POST)
+            lista = []
+            
+            listaPesquisa = []
+            #if pesquisarform.is_valid():
+            psujeito = request.POST.get('sujeito','')
+            ppredicado = request.POST.get('predicado','')
+            pobjecto = request.POST.get('objecto','')
+            
+            if len(psujeito)==0:
+                psujeito = None
+            if len(ppredicado)==0:
+                ppredicado = None
+            if len(pobjecto)==0:
+                pobjecto = None
+            pesquisa_gerador = sg.triples(psujeito,ppredicado,pobjecto)
+            for i in pesquisa_gerador:
+                #print(i)
+                listaPesquisa.append(i)
+            generador = sg.listaTriplos()
+            for i in generador:
+                #print(i)
+                lista.append(i)
+            return render(request, 'app/teste.html', {'listaTriplos':lista,'form': form,'removeform':removeform,'Sujeito':psujeito, 'Predicado':ppredicado, 'Objecto':pobjecto, 'listaPesquisa':listaPesquisa,'titleDados':'Lista de triplos','listaTriplos':lista, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos da triple store', 'titlePesquisarDados':'Pesquisar triplos'})
     else:
-        lista = []    
+        lista = []
+        listaPesquisa = []
         form = addTripleStore()
         removeform = removeTripleStore()
-
+        pesquisarform = pesquisarTripleStore(initial={'psujeito': 'ola','sujeito':'ols','Sujeito':'ole'})
         #Para listar todos os conteudos da triple store
         generador = sg.listaTriplos()
         for i in generador:
             lista.append(i)
-        return render(request, 'app/teste.html', {'form': form, 'removeform':removeform, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos da triple store','listaTriplos':lista})
+        return render(request, 'app/teste.html', {'form': form, 'removeform':removeform, 'listaPesquisa':listaPesquisa, 'titleLista':'Lista de triplos na triple store','titleInserirDados':'Inserir dados para a triple store', 'titleEliminarDados':'Eliminar tiplos da triple store','listaTriplos':lista, 'titlePesquisarDados':'Pesquisar triplos'})
