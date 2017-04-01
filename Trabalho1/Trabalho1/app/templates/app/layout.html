@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - My Django Application</title>
     {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
     <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
 </head>
 
 <body>
@@ -25,9 +25,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                    <li><a href="{% url 'teste' %}">Operações</a></li>
-                    <li><a href="{% url 'grafos' %}">Grafos</a></li>
+                    <li><a href="{% url 'jogo' %}">Game</a></li>
+                    <li><a href="{% url 'teste' %}">Operations</a></li>
+                    <li><a href="{% url 'grafos' %}">Graph</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
                 </ul>  
             </div>

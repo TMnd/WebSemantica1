@@ -40,3 +40,27 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.game_body{
+    width:100%;
+    height:auto;
+}
+
+.clubsImages{
+    width: 20%;
+    margin: 0 auto;
+    margin-left: 41%;
+}
+
+.gameClubs{
+    text-align: center;
+}
+
+.oddTable{
+    width: 100%;
+    text-align:center;
+}
+
+.oddTable tr th{
+    text-align:center;
+}

@@ -32,3 +32,10 @@ class pesquisarTripleStore(forms.Form):
     sujeito = forms.CharField(max_length=255)
     predicado = forms.CharField(max_length=255)
     objecto = forms.CharField(max_length=255)
+#class gameSelectChoices(forms.Form):
+#   def __init__(self, *args, **kwargs):
+#       choices = kwargs.pop('my_choices')
+#       super(MyCustomForm, self).__init__(*args, **kwargs)
+#       self.fields["my_field"] = forms.ChoiceField(choices=choices)
+#   
+#   other_field = forms.CharField()

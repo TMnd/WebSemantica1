@@ -17,7 +17,7 @@ import app.views
 urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
-    url(r'^contact$', app.views.contact, name='contact'),
+    url(r'^jogo', app.views.jogo, name='jogo'),
     url(r'^teste$', app.views.teste, name='teste'),
     url(r'^grafos', app.views.grafos, name='grafos'),
     url(r'^about', app.views.about, name='about'),

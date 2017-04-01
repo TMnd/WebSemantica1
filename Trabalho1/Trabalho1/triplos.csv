@@ -10,6 +10,9 @@
 1,B365H,1.17
 1,B365D,6.5
 1,B365A,17
+1,BWH,1.19
+1,BWD,6.25
+1,BWA,13
 2,Date,16/08/14
 2,HomeTeam,Academica
 2,AwayTeam,Sp Lisbon
@@ -22,6 +25,9 @@
 2,B365H,4.75
 2,B365D,3.6
 2,B365A,1.73
+2,BWH,5
+2,BWD,3.6
+2,BWA,1.65
 3,Date,16/08/14
 3,HomeTeam,Gil Vicente
 3,AwayTeam,Guimaraes
@@ -34,6 +40,9 @@
 3,B365H,2.75
 3,B365D,3.2
 3,B365A,2.6
+3,BWH,2.6
+3,BWD,3.2
+3,BWA,2.6
 4,Date,17/08/14
 4,HomeTeam,Benfica
 4,AwayTeam,Pacos Ferreira
@@ -46,6 +55,9 @@
 4,B365H,1.25
 4,B365D,5.5
 4,B365A,12
+4,BWH,1.25
+4,BWD,5.5
+4,BWA,10
 5,Date,17/08/14
 5,HomeTeam,Nacional
 5,AwayTeam,Moreirense
@@ -58,6 +70,9 @@
 5,B365H,2
 5,B365D,3.5
 5,B365A,3.6
+5,BWH,1.91
+5,BWD,3.3
+5,BWA,3.9
 6,Date,17/08/14
 6,HomeTeam,Penafiel
 6,AwayTeam,Belenenses
@@ -70,6 +85,9 @@
 6,B365H,2.2
 6,B365D,3.2
 6,B365A,3.4
+6,BWH,2.1
+6,BWD,3.25
+6,BWA,3.4
 7,Date,17/08/14
 7,HomeTeam,Rio Ave
 7,AwayTeam,Setubal
@@ -82,6 +100,9 @@
 7,B365H,2
 7,B365D,3.3
 7,B365A,3.75
+7,BWH,2
+7,BWD,3.25
+7,BWA,3.7
 8,Date,17/08/14
 8,HomeTeam,Sp Braga
 8,AwayTeam,Boavista
@@ -94,6 +115,9 @@
 8,B365H,1.33
 8,B365D,5
 8,B365A,9
+8,BWH,1.36
+8,BWD,4.4
+8,BWA,8.25
 9,Date,18/08/14
 9,HomeTeam,Arouca
 9,AwayTeam,Estoril
@@ -106,6 +130,9 @@
 9,B365H,3.4
 9,B365D,3.2
 9,B365A,2.2
+9,BWH,3.25
+9,BWD,3.25
+9,BWA,2.15
 10,Date,22/08/14
 10,HomeTeam,Guimaraes
 10,AwayTeam,Penafiel
@@ -118,6 +145,9 @@
 10,B365H,1.65
 10,B365D,3.6
 10,B365A,5.5
+10,BWH,1.62
+10,BWD,3.6
+10,BWA,5.5
 11,Date,23/08/14
 11,HomeTeam,Maritimo
 11,AwayTeam,Academica
@@ -130,6 +160,9 @@
 11,B365H,2.25
 11,B365D,3.1
 11,B365A,3.4
+11,BWH,2.15
+11,BWD,3.2
+11,BWA,3.3
 12,Date,23/08/14
 12,HomeTeam,Pacos Ferreira
 12,AwayTeam,Porto
@@ -142,6 +175,9 @@
 12,B365H,8.5
 12,B365D,4.33
 12,B365A,1.4
+12,BWH,8
+12,BWD,4.6
+12,BWA,1.36
 13,Date,23/08/14
 13,HomeTeam,Sp Lisbon
 13,AwayTeam,Arouca
@@ -154,6 +190,9 @@
 13,B365H,1.33
 13,B365D,4.75
 13,B365A,9.5
+13,BWH,1.28
+13,BWD,5
+13,BWA,10
 14,Date,24/08/14
 14,HomeTeam,Belenenses
 14,AwayTeam,Nacional
@@ -166,6 +205,9 @@
 14,B365H,2.6
 14,B365D,3.2
 14,B365A,2.7
+14,BWH,2.6
+14,BWD,3.1
+14,BWA,2.7
 15,Date,24/08/14
 15,HomeTeam,Boavista
 15,AwayTeam,Benfica
@@ -178,6 +220,9 @@
 15,B365H,15
 15,B365D,6
 15,B365A,1.2
+15,BWH,10.5
+15,BWD,5.25
+15,BWA,1.26
 16,Date,24/08/14
 16,HomeTeam,Estoril
 16,AwayTeam,Rio Ave
@@ -190,6 +235,9 @@
 16,B365H,1.91
 16,B365D,3.4
 16,B365A,4
+16,BWH,1.83
+16,BWD,3.3
+16,BWA,4.4
 17,Date,24/08/14
 17,HomeTeam,Setubal
 17,AwayTeam,Gil Vicente
@@ -202,6 +250,9 @@
 17,B365H,2.2
 17,B365D,3.2
 17,B365A,3.4
+17,BWH,2.25
+17,BWD,3.2
+17,BWA,3.1
 18,Date,25/08/14
 18,HomeTeam,Moreirense
 18,AwayTeam,Sp Braga
@@ -214,6 +265,9 @@
 18,B365H,4.75
 18,B365D,3.4
 18,B365A,1.8
+18,BWH,4.5
+18,BWD,3.4
+18,BWA,1.78
 19,Date,29/08/14
 19,HomeTeam,Academica
 19,AwayTeam,Setubal
@@ -226,6 +280,9 @@
 19,B365H,2.3
 19,B365D,3.1
 19,B365A,3.25
+19,BWH,2.25
+19,BWD,3.1
+19,BWA,3.2
 20,Date,30/08/14
 20,HomeTeam,Belenenses
 20,AwayTeam,Guimaraes
@@ -238,6 +295,9 @@
 20,B365H,2.55
 20,B365D,3.1
 20,B365A,2.88
+20,BWH,2.5
+20,BWD,3.1
+20,BWA,2.8
 21,Date,30/08/14
 21,HomeTeam,Sp Braga
 21,AwayTeam,Estoril
@@ -250,6 +310,9 @@
 21,B365H,1.85
 21,B365D,3.4
 21,B365A,4.33
+21,BWH,1.78
+21,BWD,3.4
+21,BWA,4.4
 22,Date,31/08/14
 22,HomeTeam,Benfica
 22,AwayTeam,Sp Lisbon
@@ -262,6 +325,9 @@
 22,B365H,1.8
 22,B365D,3.5
 22,B365A,4.5
+22,BWH,1.78
+22,BWD,3.6
+22,BWA,4.1
 23,Date,31/08/14
 23,HomeTeam,Gil Vicente
 23,AwayTeam,Maritimo
@@ -274,6 +340,9 @@
 23,B365H,2.7
 23,B365D,3.2
 23,B365A,2.6
+23,BWH,2.5
+23,BWD,3.25
+23,BWA,2.7
 24,Date,31/08/14
 24,HomeTeam,Nacional
 24,AwayTeam,Arouca
@@ -286,6 +355,9 @@
 24,B365H,1.8
 24,B365D,3.5
 24,B365A,4.5
+24,BWH,1.83
+24,BWD,3.4
+24,BWA,4.2
 25,Date,31/08/14
 25,HomeTeam,Penafiel
 25,AwayTeam,Pacos Ferreira
@@ -298,6 +370,9 @@
 25,B365H,2.8
 25,B365D,3.3
 25,B365A,2.45
+25,BWH,2.75
+25,BWD,3.2
+25,BWA,2.5
 26,Date,31/08/14
 26,HomeTeam,Porto
 26,AwayTeam,Moreirense
@@ -310,6 +385,9 @@
 26,B365H,1.14
 26,B365D,7.5
 26,B365A,19
+26,BWH,1.19
+26,BWD,6.25
+26,BWA,13
 27,Date,01/09/14
 27,HomeTeam,Rio Ave
 27,AwayTeam,Boavista
@@ -322,6 +400,9 @@
 27,B365H,1.53
 27,B365D,3.75
 27,B365A,7
+27,BWH,1.6
+27,BWD,3.7
+27,BWA,5.5
 28,Date,12/09/14
 28,HomeTeam,Setubal
 28,AwayTeam,Benfica
@@ -334,6 +415,9 @@
 28,B365H,7
 28,B365D,4
 28,B365A,1.5
+28,BWH,7.25
+28,BWD,4.1
+28,BWA,1.44
 29,Date,13/09/14
 29,HomeTeam,Arouca
 29,AwayTeam,Sp Braga
@@ -346,6 +430,9 @@
 29,B365H,3.8
 29,B365D,3.3
 29,B365A,2
+29,BWH,3.7
+29,BWD,3.4
+29,BWA,1.95
 30,Date,13/09/14
 30,HomeTeam,Moreirense
 30,AwayTeam,Rio Ave
@@ -358,6 +445,9 @@
 30,B365H,2.6
 30,B365D,3.2
 30,B365A,2.75
+30,BWH,2.7
+30,BWD,2.95
+30,BWA,2.7
 31,Date,13/09/14
 31,HomeTeam,Sp Lisbon
 31,AwayTeam,Belenenses
@@ -370,6 +460,9 @@
 31,B365H,1.36
 31,B365D,4.5
 31,B365A,9
+31,BWH,1.33
+31,BWD,4.5
+31,BWA,9.25
 32,Date,14/09/14
 32,HomeTeam,Boavista
 32,AwayTeam,Academica
@@ -382,6 +475,9 @@
 32,B365H,2.88
 32,B365D,3.3
 32,B365A,2.4
+32,BWH,2.8
+32,BWD,2.9
+32,BWA,2.65
 33,Date,14/09/14
 33,HomeTeam,Estoril
 33,AwayTeam,Nacional
@@ -394,6 +490,9 @@
 33,B365H,2.1
 33,B365D,3.3
 33,B365A,3.5
+33,BWH,2
+33,BWD,3.3
+33,BWA,3.6
 34,Date,14/09/14
 34,HomeTeam,Guimaraes
 34,AwayTeam,Porto
@@ -406,6 +505,9 @@
 34,B365H,6.5
 34,B365D,3.8
 34,B365A,1.55
+34,BWH,6.25
+34,BWD,3.75
+34,BWA,1.53
 35,Date,14/09/14
 35,HomeTeam,Maritimo
 35,AwayTeam,Penafiel
@@ -418,6 +520,9 @@
 35,B365H,1.67
 35,B365D,3.6
 35,B365A,5.25
+35,BWH,1.65
+35,BWD,3.6
+35,BWA,5
 36,Date,14/09/14
 36,HomeTeam,Pacos Ferreira
 36,AwayTeam,Gil Vicente
@@ -430,6 +535,9 @@
 36,B365H,1.8
 36,B365D,3.3
 36,B365A,4.75
+36,BWH,1.8
+36,BWD,3.4
+36,BWA,4.4
 37,Date,19/09/14
 37,HomeTeam,Guimaraes
 37,AwayTeam,Pacos Ferreira
@@ -442,6 +550,9 @@
 37,B365H,1.95
 37,B365D,3.25
 37,B365A,4.2
+37,BWH,1.87
+37,BWD,3.3
+37,BWA,4.1
 38,Date,20/09/14
 38,HomeTeam,Nacional
 38,AwayTeam,Sp Braga
@@ -454,6 +565,9 @@
 38,B365H,2.88
 38,B365D,3.2
 38,B365A,2.5
+38,BWH,2.8
+38,BWD,3.2
+38,BWA,2.45
 39,Date,20/09/14
 39,HomeTeam,Penafiel
 39,AwayTeam,Setubal
@@ -466,6 +580,9 @@
 39,B365H,2.63
 39,B365D,3.2
 39,B365A,2.7
+39,BWH,2.55
+39,BWD,3.1
+39,BWA,2.75
 40,Date,21/09/14
 40,HomeTeam,Belenenses
 40,AwayTeam,Maritimo
@@ -478,6 +595,9 @@
 40,B365H,2.5
 40,B365D,3.3
 40,B365A,2.8
+40,BWH,2.55
+40,BWD,3.2
+40,BWA,2.7
 41,Date,21/09/14
 41,HomeTeam,Benfica
 41,AwayTeam,Moreirense
@@ -490,6 +610,9 @@
 41,B365H,1.2
 41,B365D,6
 41,B365A,15
+41,BWH,1.22
+41,BWD,5.75
+41,BWA,11.5
 42,Date,21/09/14
 42,HomeTeam,Gil Vicente
 42,AwayTeam,Sp Lisbon
@@ -502,6 +625,9 @@
 42,B365H,7
 42,B365D,3.9
 42,B365A,1.5
+42,BWH,6
+42,BWD,3.75
+42,BWA,1.55
 43,Date,21/09/14
 43,HomeTeam,Porto
 43,AwayTeam,Boavista
@@ -514,6 +640,9 @@
 43,B365H,1.14
 43,B365D,7.5
 43,B365A,17
+43,BWH,1.13
+43,BWD,7.25
+43,BWA,17.5
 44,Date,21/09/14
 44,HomeTeam,Rio Ave
 44,AwayTeam,Arouca
@@ -526,6 +655,9 @@
 44,B365H,1.7
 44,B365D,3.5
 44,B365A,5.25
+44,BWH,1.67
+44,BWD,3.6
+44,BWA,5
 45,Date,22/09/14
 45,HomeTeam,Academica
 45,AwayTeam,Estoril
@@ -538,6 +670,9 @@
 45,B365H,2.75
 45,B365D,3.3
 45,B365A,2.5
+45,BWH,2.8
+45,BWD,3.1
+45,BWA,2.5
 46,Date,26/09/14
 46,HomeTeam,Sp Lisbon
 46,AwayTeam,Porto
@@ -550,6 +685,9 @@
 46,B365H,3.1
 46,B365D,3.1
 46,B365A,2.4
+46,BWH,3
+46,BWD,3.3
+46,BWA,2.25
 47,Date,27/09/14
 47,HomeTeam,Estoril
 47,AwayTeam,Benfica
@@ -562,6 +700,9 @@
 47,B365H,5
 47,B365D,3.6
 47,B365A,1.7
+47,BWH,5
+47,BWD,3.6
+47,BWA,1.67
 48,Date,27/09/14
 48,HomeTeam,Sp Braga
 48,AwayTeam,Rio Ave
@@ -574,6 +715,9 @@
 48,B365H,1.73
 48,B365D,3.5
 48,B365A,5
+48,BWH,1.75
+48,BWD,3.5
+48,BWA,4.4
 49,Date,28/09/14
 49,HomeTeam,Arouca
 49,AwayTeam,Academica
@@ -586,6 +730,9 @@
 49,B365H,2.25
 49,B365D,3.25
 49,B365A,3.2
+49,BWH,2.3
+49,BWD,3.1
+49,BWA,3.1
 50,Date,28/09/14
 50,HomeTeam,Boavista
 50,AwayTeam,Gil Vicente
@@ -598,6 +745,9 @@
 50,B365H,2.5
 50,B365D,3.25
 50,B365A,2.8
+50,BWH,2.5
+50,BWD,3.2
+50,BWA,2.7
 51,Date,28/09/14
 51,HomeTeam,Maritimo
 51,AwayTeam,Guimaraes
@@ -610,6 +760,9 @@
 51,B365H,2.4
 51,B365D,3.25
 51,B365A,2.9
+51,BWH,2.35
+51,BWD,3.3
+51,BWA,2.85
 52,Date,28/09/14
 52,HomeTeam,Moreirense
 52,AwayTeam,Penafiel
@@ -622,6 +775,9 @@
 52,B365H,1.83
 52,B365D,3.5
 52,B365A,4.33
+52,BWH,1.91
+52,BWD,3.3
+52,BWA,3.9
 53,Date,28/09/14
 53,HomeTeam,Setubal
 53,AwayTeam,Nacional
@@ -634,6 +790,9 @@
 53,B365H,2.6
 53,B365D,3.2
 53,B365A,2.7
+53,BWH,2.5
+53,BWD,3.3
+53,BWA,2.65
 54,Date,29/09/14
 54,HomeTeam,Pacos Ferreira
 54,AwayTeam,Belenenses
@@ -646,6 +805,9 @@
 54,B365H,2.05
 54,B365D,3.3
 54,B365A,3.6
+54,BWH,1.95
+54,BWD,3.2
+54,BWA,4
 55,Date,03/10/14
 55,HomeTeam,Guimaraes
 55,AwayTeam,Boavista
@@ -658,6 +820,9 @@
 55,B365H,1.62
 55,B365D,3.6
 55,B365A,6
+55,BWH,1.55
+55,BWD,3.8
+55,BWA,5.75
 56,Date,04/10/14
 56,HomeTeam,Penafiel
 56,AwayTeam,Sp Lisbon
@@ -670,6 +835,9 @@
 56,B365H,8
 56,B365D,4
 56,B365A,1.44
+56,BWH,7.5
+56,BWD,3.9
+56,BWA,1.45
 57,Date,05/10/14
 57,HomeTeam,Academica
 57,AwayTeam,Moreirense
@@ -682,6 +850,9 @@
 57,B365H,2.38
 57,B365D,3.1
 57,B365A,3.1
+57,BWH,2.3
+57,BWD,3.1
+57,BWA,3.1
 58,Date,05/10/14
 58,HomeTeam,Belenenses
 58,AwayTeam,Setubal
@@ -694,6 +865,9 @@
 58,B365H,2.2
 58,B365D,3.1
 58,B365A,3.5
+58,BWH,2.15
+58,BWD,3.3
+58,BWA,3.2
 59,Date,05/10/14
 59,HomeTeam,Benfica
 59,AwayTeam,Arouca
@@ -706,6 +880,9 @@
 59,B365H,1.2
 59,B365D,6.5
 59,B365A,13
+59,BWH,1.18
+59,BWD,6.25
+59,BWA,14
 60,Date,05/10/14
 60,HomeTeam,Gil Vicente
 60,AwayTeam,Estoril
@@ -718,6 +895,9 @@
 60,B365H,3.8
 60,B365D,3.3
 60,B365A,2
+60,BWH,3.1
+60,BWD,3.4
+60,BWA,2.15
 61,Date,05/10/14
 61,HomeTeam,Nacional
 61,AwayTeam,Rio Ave
@@ -730,6 +910,9 @@
 61,B365H,2.05
 61,B365D,3.3
 61,B365A,3.6
+61,BWH,2.25
+61,BWD,3.3
+61,BWA,3
 62,Date,05/10/14
 62,HomeTeam,Pacos Ferreira
 62,AwayTeam,Maritimo
@@ -742,6 +925,9 @@
 62,B365H,2.25
 62,B365D,3.1
 62,B365A,3.4
+62,BWH,2.4
+62,BWD,3.25
+62,BWA,2.8
 63,Date,05/10/14
 63,HomeTeam,Porto
 63,AwayTeam,Sp Braga
@@ -754,6 +940,9 @@
 63,B365H,1.44
 63,B365D,4
 63,B365A,8
+63,BWH,1.5
+63,BWD,4
+63,BWA,6.25
 64,Date,24/10/14
 64,HomeTeam,Setubal
 64,AwayTeam,Guimaraes
@@ -766,6 +955,9 @@
 64,B365H,2.75
 64,B365D,3.3
 64,B365A,2.5
+64,BWH,2.65
+64,BWD,3.3
+64,BWA,2.5
 65,Date,25/10/14
 65,HomeTeam,Arouca
 65,AwayTeam,Porto
@@ -778,6 +970,9 @@
 65,B365H,8.5
 65,B365D,4.75
 65,B365A,1.36
+65,BWH,8
+65,BWD,4.5
+65,BWA,1.36
 66,Date,25/10/14
 66,HomeTeam,Boavista
 66,AwayTeam,Pacos Ferreira
@@ -790,6 +985,9 @@
 66,B365H,3.5
 66,B365D,3.2
 66,B365A,2.15
+66,BWH,3.5
+66,BWD,3.25
+66,BWA,2.05
 67,Date,25/10/14
 67,HomeTeam,Moreirense
 67,AwayTeam,Gil Vicente
@@ -802,6 +1000,9 @@
 67,B365H,1.91
 67,B365D,3.25
 67,B365A,4.33
+67,BWH,1.87
+67,BWD,3.3
+67,BWA,4.1
 68,Date,26/10/14
 68,HomeTeam,Estoril
 68,AwayTeam,Belenenses
@@ -814,6 +1015,9 @@
 68,B365H,1.75
 68,B365D,3.4
 68,B365A,5
+68,BWH,1.78
+68,BWD,3.5
+68,BWA,4.33
 69,Date,26/10/14
 69,HomeTeam,Nacional
 69,AwayTeam,Academica
@@ -826,6 +1030,9 @@
 69,B365H,1.85
 69,B365D,3.4
 69,B365A,4.33
+69,BWH,1.75
+69,BWD,3.5
+69,BWA,4.5
 70,Date,26/10/14
 70,HomeTeam,Sp Braga
 70,AwayTeam,Benfica
@@ -838,6 +1045,9 @@
 70,B365H,4.33
 70,B365D,3.6
 70,B365A,1.8
+70,BWH,4.2
+70,BWD,3.4
+70,BWA,1.83
 71,Date,26/10/14
 71,HomeTeam,Sp Lisbon
 71,AwayTeam,Maritimo
@@ -850,6 +1060,9 @@
 71,B365H,1.44
 71,B365D,4.33
 71,B365A,7
+71,BWH,1.4
+71,BWD,4.4
+71,BWA,7.25
 72,Date,27/10/14
 72,HomeTeam,Rio Ave
 72,AwayTeam,Penafiel
@@ -862,6 +1075,9 @@
 72,B365H,1.73
 72,B365D,3.4
 72,B365A,5.25
+72,BWH,1.65
+72,BWD,3.5
+72,BWA,5.25
 73,Date,31/10/14
 73,HomeTeam,Benfica
 73,AwayTeam,Rio Ave
@@ -874,6 +1090,9 @@
 73,B365H,1.33
 73,B365D,4.5
 73,B365A,11
+73,BWH,1.28
+73,BWD,5.25
+73,BWA,9.25
 74,Date,01/11/14
 74,HomeTeam,Guimaraes
 74,AwayTeam,Sp Lisbon
@@ -886,6 +1105,9 @@
 74,B365H,4
 74,B365D,3.4
 74,B365A,1.91
+74,BWH,3.7
+74,BWD,3.5
+74,BWA,1.91
 75,Date,01/11/14
 75,HomeTeam,Penafiel
 75,AwayTeam,Estoril
@@ -898,6 +1120,9 @@
 75,B365H,4.5
 75,B365D,3.4
 75,B365A,1.83
+75,BWH,4.25
+75,BWD,3.4
+75,BWA,1.8
 76,Date,01/11/14
 76,HomeTeam,Porto
 76,AwayTeam,Nacional
@@ -910,6 +1135,9 @@
 76,B365H,1.25
 76,B365D,5.25
 76,B365A,13
+76,BWH,1.28
+76,BWD,5.25
+76,BWA,9.5
 77,Date,02/11/14
 77,HomeTeam,Academica
 77,AwayTeam,Sp Braga
@@ -922,6 +1150,9 @@
 77,B365H,3.75
 77,B365D,3.3
 77,B365A,2
+77,BWH,3.5
+77,BWD,3.25
+77,BWA,2.05
 78,Date,02/11/14
 78,HomeTeam,Gil Vicente
 78,AwayTeam,Arouca
@@ -934,6 +1165,9 @@
 78,B365H,2.45
 78,B365D,3.25
 78,B365A,2.9
+78,BWH,2.5
+78,BWD,3.3
+78,BWA,2.65
 79,Date,02/11/14
 79,HomeTeam,Maritimo
 79,AwayTeam,Moreirense
@@ -946,6 +1180,9 @@
 79,B365H,2
 79,B365D,3.4
 79,B365A,3.75
+79,BWH,2.05
+79,BWD,3.25
+79,BWA,3.5
 80,Date,02/11/14
 80,HomeTeam,Pacos Ferreira
 80,AwayTeam,Setubal
@@ -958,6 +1195,9 @@
 80,B365H,1.85
 80,B365D,3.4
 80,B365A,4.33
+80,BWH,1.83
+80,BWD,3.4
+80,BWA,4.2
 81,Date,03/11/14
 81,HomeTeam,Belenenses
 81,AwayTeam,Boavista
@@ -970,6 +1210,9 @@
 81,B365H,1.8
 81,B365D,3.5
 81,B365A,4.5
+81,BWH,1.8
+81,BWD,3.4
+81,BWA,4.33
 82,Date,07/11/14
 82,HomeTeam,Arouca
 82,AwayTeam,Guimaraes
@@ -982,6 +1225,9 @@
 82,B365H,3
 82,B365D,3.25
 82,B365A,2.38
+82,BWH,3.25
+82,BWD,3.3
+82,BWA,2.15
 83,Date,08/11/14
 83,HomeTeam,Sp Braga
 83,AwayTeam,Gil Vicente
@@ -994,6 +1240,9 @@
 83,B365H,1.4
 83,B365D,4.33
 83,B365A,8.5
+83,BWH,1.4
+83,BWD,4.25
+83,BWA,7.5
 84,Date,09/11/14
 84,HomeTeam,Boavista
 84,AwayTeam,Penafiel
@@ -1006,6 +1255,9 @@
 84,B365H,2.5
 84,B365D,3
 84,B365A,3
+84,BWH,2.45
+84,BWD,3.25
+84,BWA,2.75
 85,Date,09/11/14
 85,HomeTeam,Estoril
 85,AwayTeam,Porto
@@ -1018,6 +1270,9 @@
 85,B365H,7.5
 85,B365D,4.2
 85,B365A,1.44
+85,BWH,7.25
+85,BWD,3.9
+85,BWA,1.45
 86,Date,09/11/14
 86,HomeTeam,Moreirense
 86,AwayTeam,Belenenses
@@ -1030,6 +1285,9 @@
 86,B365H,2.25
 86,B365D,3.1
 86,B365A,3.4
+86,BWH,2.3
+86,BWD,3.2
+86,BWA,3
 87,Date,09/11/14
 87,HomeTeam,Nacional
 87,AwayTeam,Benfica
@@ -1042,6 +1300,9 @@
 87,B365H,5.5
 87,B365D,3.75
 87,B365A,1.62
+87,BWH,5.5
+87,BWD,3.6
+87,BWA,1.6
 88,Date,09/11/14
 88,HomeTeam,Setubal
 88,AwayTeam,Maritimo
@@ -1054,6 +1315,9 @@
 88,B365H,2.9
 88,B365D,3.25
 88,B365A,2.4
+88,BWH,2.95
+88,BWD,3
+88,BWA,2.45
 89,Date,09/11/14
 89,HomeTeam,Sp Lisbon
 89,AwayTeam,Pacos Ferreira
@@ -1066,6 +1330,9 @@
 89,B365H,1.5
 89,B365D,4
 89,B365A,7
+89,BWH,1.45
+89,BWD,4.1
+89,BWA,6.75
 90,Date,10/11/14
 90,HomeTeam,Rio Ave
 90,AwayTeam,Academica
@@ -1078,6 +1345,9 @@
 90,B365H,1.8
 90,B365D,3.5
 90,B365A,4.5
+90,BWH,1.91
+90,BWD,3.1
+90,BWA,4.2
 91,Date,28/11/14
 91,HomeTeam,Guimaraes
 91,AwayTeam,Moreirense
@@ -1090,6 +1360,9 @@
 91,B365H,1.83
 91,B365D,3.4
 91,B365A,4.5
+91,BWH,1.78
+91,BWD,3.5
+91,BWA,4.33
 92,Date,29/11/14
 92,HomeTeam,Belenenses
 92,AwayTeam,Arouca
@@ -1102,6 +1375,9 @@
 92,B365H,2.05
 92,B365D,3.2
 92,B365A,3.8
+92,BWH,1.85
+92,BWD,3.4
+92,BWA,4.1
 93,Date,29/11/14
 93,HomeTeam,Penafiel
 93,AwayTeam,Sp Braga
@@ -1114,6 +1390,9 @@
 93,B365H,6.5
 93,B365D,3.5
 93,B365A,1.62
+93,BWH,5.75
+93,BWD,3.6
+93,BWA,1.6
 94,Date,29/11/14
 94,HomeTeam,Sp Lisbon
 94,AwayTeam,Setubal
@@ -1126,6 +1405,9 @@
 94,B365H,1.2
 94,B365D,5.75
 94,B365A,17
+94,BWH,1.22
+94,BWD,5.5
+94,BWA,12
 95,Date,30/11/14
 95,HomeTeam,Academica
 95,AwayTeam,Benfica
@@ -1138,6 +1420,9 @@
 95,B365H,8
 95,B365D,4
 95,B365A,1.44
+95,BWH,7.75
+95,BWD,4.2
+95,BWA,1.4
 96,Date,30/11/14
 96,HomeTeam,Gil Vicente
 96,AwayTeam,Nacional
@@ -1150,6 +1435,9 @@
 96,B365H,3.4
 96,B365D,3.1
 96,B365A,2.25
+96,BWH,3.2
+96,BWD,3.2
+96,BWA,2.2
 97,Date,30/11/14
 97,HomeTeam,Maritimo
 97,AwayTeam,Boavista
@@ -1162,6 +1450,9 @@
 97,B365H,1.57
 97,B365D,3.75
 97,B365A,6
+97,BWH,1.53
+97,BWD,3.7
+97,BWA,6.5
 98,Date,30/11/14
 98,HomeTeam,Porto
 98,AwayTeam,Rio Ave
@@ -1174,6 +1465,9 @@
 98,B365H,1.25
 98,B365D,5.5
 98,B365A,12
+98,BWH,1.25
+98,BWD,5.25
+98,BWA,11
 99,Date,01/12/14
 99,HomeTeam,Pacos Ferreira
 99,AwayTeam,Estoril
@@ -1186,6 +1480,9 @@
 99,B365H,2.25
 99,B365D,3.25
 99,B365A,3.2
+99,BWH,2.3
+99,BWD,3.2
+99,BWA,3
 100,Date,05/12/14
 100,HomeTeam,Boavista
 100,AwayTeam,Sp Lisbon
@@ -1198,6 +1495,9 @@
 100,B365H,13
 100,B365D,6
 100,B365A,1.22
+100,BWH,11
+100,BWD,6
+100,BWA,1.22
 101,Date,06/12/14
 101,HomeTeam,Academica
 101,AwayTeam,Porto
@@ -1210,6 +1510,9 @@
 101,B365H,10
 101,B365D,5.25
 101,B365A,1.29
+101,BWH,12
+101,BWD,5
+101,BWA,1.26
 102,Date,06/12/14
 102,HomeTeam,Benfica
 102,AwayTeam,Belenenses
@@ -1222,6 +1525,9 @@
 102,B365H,1.25
 102,B365D,5.5
 102,B365A,12
+102,BWH,1.2
+102,BWD,6
+102,BWA,12
 103,Date,06/12/14
 103,HomeTeam,Estoril
 103,AwayTeam,Setubal
@@ -1234,6 +1540,9 @@
 103,B365H,1.62
 103,B365D,3.75
 103,B365A,5.5
+103,BWH,1.65
+103,BWD,3.7
+103,BWA,5
 104,Date,06/12/14
 104,HomeTeam,Rio Ave
 104,AwayTeam,Gil Vicente
@@ -1246,6 +1555,9 @@
 104,B365H,1.57
 104,B365D,3.6
 104,B365A,6.5
+104,BWH,1.57
+104,BWD,3.7
+104,BWA,5.75
 105,Date,07/12/14
 105,HomeTeam,Arouca
 105,AwayTeam,Penafiel
@@ -1258,6 +1570,9 @@
 105,B365H,1.83
 105,B365D,3.5
 105,B365A,4.33
+105,BWH,1.8
+105,BWD,3.6
+105,BWA,4
 106,Date,07/12/14
 106,HomeTeam,Moreirense
 106,AwayTeam,Pacos Ferreira
@@ -1270,6 +1585,9 @@
 106,B365H,2.75
 106,B365D,3.1
 106,B365A,2.63
+106,BWH,2.65
+106,BWD,3.25
+106,BWA,2.55
 107,Date,07/12/14
 107,HomeTeam,Sp Braga
 107,AwayTeam,Guimaraes
@@ -1282,6 +1600,9 @@
 107,B365H,1.75
 107,B365D,3.5
 107,B365A,4.75
+107,BWH,1.75
+107,BWD,3.6
+107,BWA,4.4
 108,Date,08/12/14
 108,HomeTeam,Nacional
 108,AwayTeam,Maritimo
@@ -1294,6 +1615,9 @@
 108,B365H,2.4
 108,B365D,3.2
 108,B365A,3
+108,BWH,2.25
+108,BWD,3.3
+108,BWA,3
 109,Date,12/12/14
 109,HomeTeam,Setubal
 109,AwayTeam,Boavista
@@ -1306,6 +1630,9 @@
 109,B365H,1.85
 109,B365D,3.5
 109,B365A,4.2
+109,BWH,1.87
+109,BWD,3.4
+109,BWA,4
 110,Date,13/12/14
 110,HomeTeam,Belenenses
 110,AwayTeam,Sp Braga
@@ -1318,6 +1645,9 @@
 110,B365H,4
 110,B365D,3.4
 110,B365A,1.91
+110,BWH,3.75
+110,BWD,3.3
+110,BWA,1.95
 111,Date,13/12/14
 111,HomeTeam,Gil Vicente
 111,AwayTeam,Academica
@@ -1330,6 +1660,9 @@
 111,B365H,2.55
 111,B365D,3.25
 111,B365A,2.75
+111,BWH,2.5
+111,BWD,2.95
+111,BWA,2.9
 112,Date,13/12/14
 112,HomeTeam,Pacos Ferreira
 112,AwayTeam,Arouca
@@ -1342,6 +1675,9 @@
 112,B365H,1.73
 112,B365D,3.6
 112,B365A,4.75
+112,BWH,1.65
+112,BWD,3.6
+112,BWA,5
 113,Date,13/12/14
 113,HomeTeam,Penafiel
 113,AwayTeam,Nacional
@@ -1354,6 +1690,9 @@
 113,B365H,3.6
 113,B365D,3.3
 113,B365A,2.05
+113,BWH,3.3
+113,BWD,3.2
+113,BWA,2.15
 114,Date,14/12/14
 114,HomeTeam,Guimaraes
 114,AwayTeam,Rio Ave
@@ -1366,6 +1705,9 @@
 114,B365H,2.1
 114,B365D,3.25
 114,B365A,3.6
+114,BWH,2.1
+114,BWD,3.1
+114,BWA,3.5
 115,Date,14/12/14
 115,HomeTeam,Maritimo
 115,AwayTeam,Estoril
@@ -1378,6 +1720,9 @@
 115,B365H,2.45
 115,B365D,3.2
 115,B365A,2.88
+115,BWH,2.45
+115,BWD,3
+115,BWA,2.95
 116,Date,14/12/14
 116,HomeTeam,Porto
 116,AwayTeam,Benfica
@@ -1390,6 +1735,9 @@
 116,B365H,1.83
 116,B365D,3.6
 116,B365A,4.2
+116,BWH,1.87
+116,BWD,3.4
+116,BWA,4
 117,Date,14/12/14
 117,HomeTeam,Sp Lisbon
 117,AwayTeam,Moreirense
@@ -1402,6 +1750,9 @@
 117,B365H,1.3
 117,B365D,5
 117,B365A,11
+117,BWH,1.3
+117,BWD,5.25
+117,BWA,8.5
 118,Date,19/12/14
 118,HomeTeam,Porto
 118,AwayTeam,Setubal
@@ -1414,6 +1765,9 @@
 118,B365H,1.1
 118,B365D,9
 118,B365A,23
+118,BWH,1.1
+118,BWD,9.75
+118,BWA,14
 119,Date,20/12/14
 119,HomeTeam,Estoril
 119,AwayTeam,Guimaraes
@@ -1426,6 +1780,9 @@
 119,B365H,2.2
 119,B365D,3.25
 119,B365A,3.3
+119,BWH,2.2
+119,BWD,3.25
+119,BWA,3.1
 120,Date,21/12/14
 120,HomeTeam,Academica
 120,AwayTeam,Penafiel
@@ -1438,6 +1795,9 @@
 120,B365H,1.8
 120,B365D,3.3
 120,B365A,4.75
+120,BWH,1.85
+120,BWD,3.2
+120,BWA,4.4
 121,Date,21/12/14
 121,HomeTeam,Arouca
 121,AwayTeam,Maritimo
@@ -1450,6 +1810,9 @@
 121,B365H,3
 121,B365D,3.2
 121,B365A,2.4
+121,BWH,2.8
+121,BWD,3.1
+121,BWA,2.5
 122,Date,21/12/14
 122,HomeTeam,Benfica
 122,AwayTeam,Gil Vicente
@@ -1462,6 +1825,9 @@
 122,B365H,1.13
 122,B365D,8.5
 122,B365A,17
+122,BWH,1.14
+122,BWD,7.25
+122,BWA,14.5
 123,Date,21/12/14
 123,HomeTeam,Moreirense
 123,AwayTeam,Boavista
@@ -1474,6 +1840,9 @@
 123,B365H,1.57
 123,B365D,3.6
 123,B365A,6.5
+123,BWH,1.6
+123,BWD,3.7
+123,BWA,5.5
 124,Date,21/12/14
 124,HomeTeam,Nacional
 124,AwayTeam,Sp Lisbon
@@ -1486,6 +1855,9 @@
 124,B365H,5
 124,B365D,3.6
 124,B365A,1.7
+124,BWH,4.75
+124,BWD,3.6
+124,BWA,1.7
 125,Date,22/12/14
 125,HomeTeam,Rio Ave
 125,AwayTeam,Belenenses
@@ -1498,6 +1870,9 @@
 125,B365H,1.85
 125,B365D,3.3
 125,B365A,4.5
+125,BWH,1.8
+125,BWD,3.4
+125,BWA,4.4
 126,Date,22/12/14
 126,HomeTeam,Sp Braga
 126,AwayTeam,Pacos Ferreira
@@ -1510,6 +1885,9 @@
 126,B365H,1.7
 126,B365D,3.5
 126,B365A,5.25
+126,BWH,1.7
+126,BWD,3.4
+126,BWA,5
 127,Date,02/01/15
 127,HomeTeam,Belenenses
 127,AwayTeam,Academica
@@ -1522,6 +1900,9 @@
 127,B365H,1.95
 127,B365D,3.25
 127,B365A,4.2
+127,BWH,1.9
+127,BWD,3.2
+127,BWA,4.1
 128,Date,03/01/15
 128,HomeTeam,Gil Vicente
 128,AwayTeam,Porto
@@ -1534,6 +1915,9 @@
 128,B365H,15
 128,B365D,6.5
 128,B365A,1.18
+128,BWH,13.5
+128,BWD,5.75
+128,BWA,1.2
 129,Date,03/01/15
 129,HomeTeam,Maritimo
 129,AwayTeam,Sp Braga
@@ -1546,6 +1930,9 @@
 129,B365H,3.5
 129,B365D,3.3
 129,B365A,2.1
+129,BWH,3.1
+129,BWD,3.2
+129,BWA,2.25
 130,Date,03/01/15
 130,HomeTeam,Pacos Ferreira
 130,AwayTeam,Rio Ave
@@ -1558,6 +1945,9 @@
 130,B365H,2.2
 130,B365D,3.25
 130,B365A,3.3
+130,BWH,2.25
+130,BWD,3.2
+130,BWA,3.1
 131,Date,03/01/15
 131,HomeTeam,Sp Lisbon
 131,AwayTeam,Estoril
@@ -1570,6 +1960,9 @@
 131,B365H,1.53
 131,B365D,3.8
 131,B365A,6.5
+131,BWH,1.55
+131,BWD,3.8
+131,BWA,5.75
 132,Date,04/01/15
 132,HomeTeam,Boavista
 132,AwayTeam,Arouca
@@ -1582,6 +1975,9 @@
 132,B365H,2.6
 132,B365D,3.25
 132,B365A,2.7
+132,BWH,2.4
+132,BWD,3.1
+132,BWA,2.9
 133,Date,04/01/15
 133,HomeTeam,Guimaraes
 133,AwayTeam,Nacional
@@ -1594,6 +1990,9 @@
 133,B365H,2
 133,B365D,3.25
 133,B365A,3.9
+133,BWH,1.91
+133,BWD,3.4
+133,BWA,3.8
 134,Date,04/01/15
 134,HomeTeam,Penafiel
 134,AwayTeam,Benfica
@@ -1606,6 +2005,9 @@
 134,B365H,12
 134,B365D,5.5
 134,B365A,1.25
+134,BWH,9.25
+134,BWD,5
+134,BWA,1.3
 135,Date,04/01/15
 135,HomeTeam,Setubal
 135,AwayTeam,Moreirense
@@ -1618,6 +2020,9 @@
 135,B365H,2.75
 135,B365D,3.3
 135,B365A,2.5
+135,BWH,2.7
+135,BWD,2.95
+135,BWA,2.7
 136,Date,09/01/15
 136,HomeTeam,Estoril
 136,AwayTeam,Moreirense
@@ -1630,6 +2035,9 @@
 136,B365H,1.85
 136,B365D,3.3
 136,B365A,4.5
+136,BWH,1.8
+136,BWD,3.4
+136,BWA,4.25
 137,Date,10/01/15
 137,HomeTeam,Academica
 137,AwayTeam,Pacos Ferreira
@@ -1642,6 +2050,9 @@
 137,B365H,2.9
 137,B365D,3.3
 137,B365A,2.38
+137,BWH,2.75
+137,BWD,3.25
+137,BWA,2.45
 138,Date,10/01/15
 138,HomeTeam,Benfica
 138,AwayTeam,Guimaraes
@@ -1654,6 +2065,9 @@
 138,B365H,1.33
 138,B365D,4.75
 138,B365A,9.5
+138,BWH,1.33
+138,BWD,4.6
+138,BWA,9
 139,Date,10/01/15
 139,HomeTeam,Porto
 139,AwayTeam,Belenenses
@@ -1666,6 +2080,9 @@
 139,B365H,1.18
 139,B365D,6.5
 139,B365A,15
+139,BWH,1.18
+139,BWD,6.25
+139,BWA,13.5
 140,Date,11/01/15
 140,HomeTeam,Arouca
 140,AwayTeam,Setubal
@@ -1678,6 +2095,9 @@
 140,B365H,2.05
 140,B365D,3.2
 140,B365A,3.8
+140,BWH,2.05
+140,BWD,3.25
+140,BWA,3.5
 141,Date,11/01/15
 141,HomeTeam,Gil Vicente
 141,AwayTeam,Penafiel
@@ -1690,6 +2110,9 @@
 141,B365H,2.1
 141,B365D,3.25
 141,B365A,3.5
+141,BWH,2.15
+141,BWD,3.2
+141,BWA,3.3
 142,Date,11/01/15
 142,HomeTeam,Nacional
 142,AwayTeam,Boavista
@@ -1702,6 +2125,9 @@
 142,B365H,1.62
 142,B365D,3.6
 142,B365A,6
+142,BWH,1.67
+142,BWD,3.6
+142,BWA,5
 143,Date,11/01/15
 143,HomeTeam,Rio Ave
 143,AwayTeam,Maritimo
@@ -1714,6 +2140,9 @@
 143,B365H,2.2
 143,B365D,3.25
 143,B365A,3.3
+143,BWH,2
+143,BWD,3.25
+143,BWA,3.7
 144,Date,11/01/15
 144,HomeTeam,Sp Braga
 144,AwayTeam,Sp Lisbon
@@ -1726,6 +2155,9 @@
 144,B365H,2.8
 144,B365D,3.2
 144,B365A,2.5
+144,BWH,2.75
+144,BWD,3.1
+144,BWA,2.55
 145,Date,17/01/15
 145,HomeTeam,Guimaraes
 145,AwayTeam,Academica
@@ -1738,6 +2170,9 @@
 145,B365H,1.62
 145,B365D,3.6
 145,B365A,6
+145,BWH,1.55
+145,BWD,3.7
+145,BWA,6.25
 146,Date,17/01/15
 146,HomeTeam,Penafiel
 146,AwayTeam,Porto
@@ -1750,6 +2185,9 @@
 146,B365H,17
 146,B365D,6.5
 146,B365A,1.17
+146,BWH,14
+146,BWD,6.25
+146,BWA,1.18
 147,Date,18/01/15
 147,HomeTeam,Belenenses
 147,AwayTeam,Gil Vicente
@@ -1762,6 +2200,9 @@
 147,B365H,1.91
 147,B365D,3.2
 147,B365A,4.33
+147,BWH,1.75
+147,BWD,3.3
+147,BWA,4.75
 148,Date,18/01/15
 148,HomeTeam,Boavista
 148,AwayTeam,Estoril
@@ -1774,6 +2215,9 @@
 148,B365H,3.6
 148,B365D,3.2
 148,B365A,2.1
+148,BWH,3.5
+148,BWD,3.1
+148,BWA,2.1
 149,Date,18/01/15
 149,HomeTeam,Maritimo
 149,AwayTeam,Benfica
@@ -1786,6 +2230,9 @@
 149,B365H,5.75
 149,B365D,4.2
 149,B365A,1.53
+149,BWH,5.75
+149,BWD,3.6
+149,BWA,1.6
 150,Date,18/01/15
 150,HomeTeam,Moreirense
 150,AwayTeam,Arouca
@@ -1798,6 +2245,9 @@
 150,B365H,2.05
 150,B365D,3.25
 150,B365A,3.75
+150,BWH,1.95
+150,BWD,3.2
+150,BWA,4
 151,Date,18/01/15
 151,HomeTeam,Pacos Ferreira
 151,AwayTeam,Nacional
@@ -1810,6 +2260,9 @@
 151,B365H,2.05
 151,B365D,3.3
 151,B365A,3.6
+151,BWH,1.91
+151,BWD,3.25
+151,BWA,4
 152,Date,18/01/15
 152,HomeTeam,Setubal
 152,AwayTeam,Sp Braga
@@ -1822,6 +2275,9 @@
 152,B365H,4.5
 152,B365D,3.5
 152,B365A,1.8
+152,BWH,4.25
+152,BWD,3.3
+152,BWA,1.85
 153,Date,18/01/15
 153,HomeTeam,Sp Lisbon
 153,AwayTeam,Rio Ave
@@ -1834,6 +2290,9 @@
 153,B365H,1.4
 153,B365D,4.33
 153,B365A,8.5
+153,BWH,1.4
+153,BWD,4.2
+153,BWA,7.75
 154,Date,24/01/15
 154,HomeTeam,Guimaraes
 154,AwayTeam,Gil Vicente
@@ -1846,6 +2305,9 @@
 154,B365H,1.5
 154,B365D,4
 154,B365A,7
+154,BWH,1.5
+154,BWD,4.1
+154,BWA,6
 155,Date,25/01/15
 155,HomeTeam,Belenenses
 155,AwayTeam,Penafiel
@@ -1858,6 +2320,9 @@
 155,B365H,1.75
 155,B365D,3.6
 155,B365A,4.75
+155,BWH,1.75
+155,BWD,3.6
+155,BWA,4.4
 156,Date,25/01/15
 156,HomeTeam,Boavista
 156,AwayTeam,Sp Braga
@@ -1870,6 +2335,9 @@
 156,B365H,5.5
 156,B365D,3.6
 156,B365A,1.65
+156,BWH,5
+156,BWD,3.6
+156,BWA,1.65
 157,Date,25/01/15
 157,HomeTeam,Estoril
 157,AwayTeam,Arouca
@@ -1882,6 +2350,9 @@
 157,B365H,1.6
 157,B365D,3.75
 157,B365A,5.75
+157,BWH,1.67
+157,BWD,3.5
+157,BWA,5
 158,Date,25/01/15
 158,HomeTeam,Maritimo
 158,AwayTeam,Porto
@@ -1894,6 +2365,9 @@
 158,B365H,7
 158,B365D,4.75
 158,B365A,1.4
+158,BWH,7.5
+158,BWD,4.25
+158,BWA,1.4
 159,Date,25/01/15
 159,HomeTeam,Moreirense
 159,AwayTeam,Nacional
@@ -1906,6 +2380,9 @@
 159,B365H,2.25
 159,B365D,3.2
 159,B365A,3.25
+159,BWH,2.45
+159,BWD,3.25
+159,BWA,2.75
 160,Date,25/01/15
 160,HomeTeam,Setubal
 160,AwayTeam,Rio Ave
@@ -1918,6 +2395,9 @@
 160,B365H,3.1
 160,B365D,3.25
 160,B365A,2.3
+160,BWH,3.1
+160,BWD,3
+160,BWA,2.35
 161,Date,25/01/15
 161,HomeTeam,Sp Lisbon
 161,AwayTeam,Academica
@@ -1930,6 +2410,9 @@
 161,B365H,1.2
 161,B365D,6.5
 161,B365A,13
+161,BWH,1.2
+161,BWD,6.25
+161,BWA,13
 162,Date,26/01/15
 162,HomeTeam,Pacos Ferreira
 162,AwayTeam,Benfica
@@ -1942,6 +2425,9 @@
 162,B365H,7
 162,B365D,4
 162,B365A,1.5
+162,BWH,6.25
+162,BWD,4
+162,BWA,1.5
 163,Date,30/01/15
 163,HomeTeam,Sp Braga
 163,AwayTeam,Moreirense
@@ -1954,6 +2440,9 @@
 163,B365H,1.57
 163,B365D,3.75
 163,B365A,6
+163,BWH,1.57
+163,BWD,3.6
+163,BWA,6
 164,Date,31/01/15
 164,HomeTeam,Benfica
 164,AwayTeam,Boavista
@@ -1966,6 +2455,9 @@
 164,B365H,1.18
 164,B365D,6.5
 164,B365A,15
+164,BWH,1.15
+164,BWD,7
+164,BWA,15.5
 165,Date,31/01/15
 165,HomeTeam,Nacional
 165,AwayTeam,Belenenses
@@ -1978,6 +2470,9 @@
 165,B365H,1.91
 165,B365D,3.3
 165,B365A,4.2
+165,BWH,1.85
+165,BWD,3.3
+165,BWA,4.2
 166,Date,31/01/15
 166,HomeTeam,Penafiel
 166,AwayTeam,Guimaraes
@@ -1990,6 +2485,9 @@
 166,B365H,4.5
 166,B365D,3.75
 166,B365A,1.73
+166,BWH,4.75
+166,BWD,3.4
+166,BWA,1.75
 167,Date,01/02/15
 167,HomeTeam,Academica
 167,AwayTeam,Maritimo
@@ -2002,6 +2500,9 @@
 167,B365H,3
 167,B365D,3.1
 167,B365A,2.45
+167,BWH,3
+167,BWD,3
+167,BWA,2.4
 168,Date,01/02/15
 168,HomeTeam,Arouca
 168,AwayTeam,Sp Lisbon
@@ -2014,6 +2515,9 @@
 168,B365H,9.5
 168,B365D,4
 168,B365A,1.4
+168,BWH,7.25
+168,BWD,3.9
+168,BWA,1.45
 169,Date,01/02/15
 169,HomeTeam,Gil Vicente
 169,AwayTeam,Setubal
@@ -2026,6 +2530,9 @@
 169,B365H,2.5
 169,B365D,3
 169,B365A,3
+169,BWH,2.4
+169,BWD,3
+169,BWA,3
 170,Date,01/02/15
 170,HomeTeam,Porto
 170,AwayTeam,Pacos Ferreira
@@ -2038,6 +2545,9 @@
 170,B365H,1.2
 170,B365D,6
 170,B365A,15
+170,BWH,1.18
+170,BWD,6
+170,BWA,14.5
 171,Date,01/02/15
 171,HomeTeam,Rio Ave
 171,AwayTeam,Estoril
@@ -2050,6 +2560,9 @@
 171,B365H,2.63
 171,B365D,3
 171,B365A,2.88
+171,BWH,2.4
+171,BWD,3
+171,BWA,3
 172,Date,07/02/15
 172,HomeTeam,Moreirense
 172,AwayTeam,Porto
@@ -2062,6 +2575,9 @@
 172,B365H,15
 172,B365D,5.5
 172,B365A,1.22
+172,BWH,12
+172,BWD,5
+172,BWA,1.25
 173,Date,08/02/15
 173,HomeTeam,Arouca
 173,AwayTeam,Nacional
@@ -2074,6 +2590,9 @@
 173,B365H,2.75
 173,B365D,3.3
 173,B365A,2.5
+173,BWH,2.45
+173,BWD,3.2
+173,BWA,2.75
 174,Date,08/02/15
 174,HomeTeam,Estoril
 174,AwayTeam,Sp Braga
@@ -2086,6 +2605,9 @@
 174,B365H,2.8
 174,B365D,3.25
 174,B365A,2.5
+174,BWH,2.6
+174,BWD,3.2
+174,BWA,2.6
 175,Date,08/02/15
 175,HomeTeam,Guimaraes
 175,AwayTeam,Belenenses
@@ -2098,6 +2620,9 @@
 175,B365H,1.57
 175,B365D,3.8
 175,B365A,6
+175,BWH,1.62
+175,BWD,3.5
+175,BWA,5.5
 176,Date,08/02/15
 176,HomeTeam,Maritimo
 176,AwayTeam,Gil Vicente
@@ -2110,6 +2635,9 @@
 176,B365H,1.5
 176,B365D,3.8
 176,B365A,7.5
+176,BWH,1.5
+176,BWD,4
+176,BWA,6
 177,Date,08/02/15
 177,HomeTeam,Pacos Ferreira
 177,AwayTeam,Penafiel
@@ -2122,6 +2650,9 @@
 177,B365H,1.5
 177,B365D,4
 177,B365A,7
+177,BWH,1.5
+177,BWD,3.8
+177,BWA,6.5
 178,Date,08/02/15
 178,HomeTeam,Setubal
 178,AwayTeam,Academica
@@ -2134,6 +2665,9 @@
 178,B365H,2.1
 178,B365D,3.25
 178,B365A,3.6
+178,BWH,2
+178,BWD,3.25
+178,BWA,3.7
 179,Date,08/02/15
 179,HomeTeam,Sp Lisbon
 179,AwayTeam,Benfica
@@ -2146,6 +2680,9 @@
 179,B365H,2.5
 179,B365D,3.25
 179,B365A,2.8
+179,BWH,2.65
+179,BWD,3.1
+179,BWA,2.6
 180,Date,09/02/15
 180,HomeTeam,Boavista
 180,AwayTeam,Rio Ave
@@ -2158,6 +2695,9 @@
 180,B365H,3.25
 180,B365D,3.2
 180,B365A,2.25
+180,BWH,2.85
+180,BWD,3.1
+180,BWA,2.45
 181,Date,13/02/15
 181,HomeTeam,Porto
 181,AwayTeam,Guimaraes
@@ -2170,6 +2710,9 @@
 181,B365H,1.2
 181,B365D,6
 181,B365A,15
+181,BWH,1.22
+181,BWD,6
+181,BWA,12.5
 182,Date,14/02/15
 182,HomeTeam,Belenenses
 182,AwayTeam,Sp Lisbon
@@ -2182,6 +2725,9 @@
 182,B365H,8
 182,B365D,4
 182,B365A,1.44
+182,BWH,6.75
+182,BWD,3.8
+182,BWA,1.5
 183,Date,14/02/15
 183,HomeTeam,Gil Vicente
 183,AwayTeam,Pacos Ferreira
@@ -2194,6 +2740,9 @@
 183,B365H,2.9
 183,B365D,3.3
 183,B365A,2.4
+183,BWH,3.1
+183,BWD,3.1
+183,BWA,2.3
 184,Date,15/02/15
 184,HomeTeam,Academica
 184,AwayTeam,Boavista
@@ -2206,6 +2755,9 @@
 184,B365H,2.1
 184,B365D,3.2
 184,B365A,3.6
+184,BWH,2.05
+184,BWD,3
+184,BWA,3.8
 185,Date,15/02/15
 185,HomeTeam,Benfica
 185,AwayTeam,Setubal
@@ -2218,6 +2770,9 @@
 185,B365H,1.17
 185,B365D,7
 185,B365A,15
+185,BWH,1.16
+185,BWD,6.5
+185,BWA,15
 186,Date,15/02/15
 186,HomeTeam,Penafiel
 186,AwayTeam,Maritimo
@@ -2230,6 +2785,9 @@
 186,B365H,3.1
 186,B365D,3.1
 186,B365A,2.38
+186,BWH,3.4
+186,BWD,3.1
+186,BWA,2.15
 187,Date,15/02/15
 187,HomeTeam,Rio Ave
 187,AwayTeam,Moreirense
@@ -2242,6 +2800,9 @@
 187,B365H,2.05
 187,B365D,3.2
 187,B365A,3.8
+187,BWH,2
+187,BWD,3.2
+187,BWA,3.7
 188,Date,15/02/15
 188,HomeTeam,Sp Braga
 188,AwayTeam,Arouca
@@ -2254,6 +2815,9 @@
 188,B365H,1.36
 188,B365D,4.33
 188,B365A,10
+188,BWH,1.4
+188,BWD,4.25
+188,BWA,7.75
 189,Date,16/02/15
 189,HomeTeam,Nacional
 189,AwayTeam,Estoril
@@ -2266,6 +2830,9 @@
 189,B365H,2.2
 189,B365D,3.25
 189,B365A,3.3
+189,BWH,2.35
+189,BWD,3
+189,BWA,3.1
 190,Date,20/02/15
 190,HomeTeam,Pacos Ferreira
 190,AwayTeam,Guimaraes
@@ -2278,6 +2845,9 @@
 190,B365H,2.6
 190,B365D,3.2
 190,B365A,2.75
+190,BWH,2.5
+190,BWD,3.1
+190,BWA,2.8
 191,Date,21/02/15
 191,HomeTeam,Moreirense
 191,AwayTeam,Benfica
@@ -2290,6 +2860,9 @@
 191,B365H,9
 191,B365D,5
 191,B365A,1.33
+191,BWH,9
+191,BWD,4.4
+191,BWA,1.35
 192,Date,21/02/15
 192,HomeTeam,Setubal
 192,AwayTeam,Penafiel
@@ -2302,6 +2875,9 @@
 192,B365H,2
 192,B365D,3.2
 192,B365A,4
+192,BWH,2
+192,BWD,3.25
+192,BWA,3.7
 193,Date,21/02/15
 193,HomeTeam,Sp Braga
 193,AwayTeam,Nacional
@@ -2314,6 +2890,9 @@
 193,B365H,1.6
 193,B365D,3.8
 193,B365A,5.75
+193,BWH,1.55
+193,BWD,3.75
+193,BWA,6
 194,Date,22/02/15
 194,HomeTeam,Arouca
 194,AwayTeam,Rio Ave
@@ -2326,6 +2905,9 @@
 194,B365H,3
 194,B365D,3.2
 194,B365A,2.4
+194,BWH,2.95
+194,BWD,3.1
+194,BWA,2.4
 195,Date,22/02/15
 195,HomeTeam,Estoril
 195,AwayTeam,Academica
@@ -2338,6 +2920,9 @@
 195,B365H,1.73
 195,B365D,3.5
 195,B365A,5
+195,BWH,1.7
+195,BWD,3.5
+195,BWA,4.75
 196,Date,22/02/15
 196,HomeTeam,Maritimo
 196,AwayTeam,Belenenses
@@ -2350,6 +2935,9 @@
 196,B365H,1.91
 196,B365D,3.25
 196,B365A,4.2
+196,BWH,1.91
+196,BWD,3.25
+196,BWA,4
 197,Date,22/02/15
 197,HomeTeam,Sp Lisbon
 197,AwayTeam,Gil Vicente
@@ -2362,6 +2950,9 @@
 197,B365H,1.17
 197,B365D,6.5
 197,B365A,19
+197,BWH,1.19
+197,BWD,6
+197,BWA,13
 198,Date,23/02/15
 198,HomeTeam,Boavista
 198,AwayTeam,Porto
@@ -2374,6 +2965,9 @@
 198,B365H,11
 198,B365D,6.5
 198,B365A,1.22
+198,BWH,10
+198,BWD,5.25
+198,BWA,1.26
 199,Date,27/02/15
 199,HomeTeam,Guimaraes
 199,AwayTeam,Maritimo
@@ -2386,6 +2980,9 @@
 199,B365H,1.75
 199,B365D,3.75
 199,B365A,4.33
+199,BWH,1.8
+199,BWD,3.4
+199,BWA,4.33
 200,Date,28/02/15
 200,HomeTeam,Benfica
 200,AwayTeam,Estoril
@@ -2398,6 +2995,9 @@
 200,B365H,1.22
 200,B365D,5.75
 200,B365A,13
+200,BWH,1.22
+200,BWD,5.75
+200,BWA,11.5
 201,Date,28/02/15
 201,HomeTeam,Gil Vicente
 201,AwayTeam,Boavista
@@ -2410,6 +3010,9 @@
 201,B365H,2.3
 201,B365D,3.2
 201,B365A,3.1
+201,BWH,2.3
+201,BWD,2.95
+201,BWA,3.25
 202,Date,28/02/15
 202,HomeTeam,Nacional
 202,AwayTeam,Setubal
@@ -2422,6 +3025,9 @@
 202,B365H,1.57
 202,B365D,3.75
 202,B365A,6
+202,BWH,1.6
+202,BWD,3.6
+202,BWA,5.75
 203,Date,28/02/15
 203,HomeTeam,Rio Ave
 203,AwayTeam,Sp Braga
@@ -2434,6 +3040,9 @@
 203,B365H,3.75
 203,B365D,3.3
 203,B365A,2
+203,BWH,3.6
+203,BWD,3.2
+203,BWA,2.05
 204,Date,01/03/15
 204,HomeTeam,Academica
 204,AwayTeam,Arouca
@@ -2446,6 +3055,9 @@
 204,B365H,2.2
 204,B365D,3.2
 204,B365A,3.4
+204,BWH,2.2
+204,BWD,3.1
+204,BWA,3.3
 205,Date,01/03/15
 205,HomeTeam,Penafiel
 205,AwayTeam,Moreirense
@@ -2458,6 +3070,9 @@
 205,B365H,2.88
 205,B365D,3.2
 205,B365A,2.5
+205,BWH,2.9
+205,BWD,2.9
+205,BWA,2.55
 206,Date,01/03/15
 206,HomeTeam,Porto
 206,AwayTeam,Sp Lisbon
@@ -2470,6 +3085,9 @@
 206,B365H,1.67
 206,B365D,3.75
 206,B365A,5
+206,BWH,1.67
+206,BWD,3.6
+206,BWA,5
 207,Date,02/03/15
 207,HomeTeam,Belenenses
 207,AwayTeam,Pacos Ferreira
@@ -2482,6 +3100,9 @@
 207,B365H,2.38
 207,B365D,3.2
 207,B365A,3
+207,BWH,2.4
+207,BWD,3
+207,BWA,3
 208,Date,06/03/15
 208,HomeTeam,Sp Braga
 208,AwayTeam,Porto
@@ -2494,6 +3115,9 @@
 208,B365H,4.33
 208,B365D,3.4
 208,B365A,1.85
+208,BWH,4.33
+208,BWD,3.4
+208,BWA,1.85
 209,Date,07/03/15
 209,HomeTeam,Setubal
 209,AwayTeam,Belenenses
@@ -2506,6 +3130,9 @@
 209,B365H,2.5
 209,B365D,3
 209,B365A,3
+209,BWH,2.45
+209,BWD,3
+209,BWA,2.95
 210,Date,08/03/15
 210,HomeTeam,Arouca
 210,AwayTeam,Benfica
@@ -2518,6 +3145,9 @@
 210,B365H,15
 210,B365D,5.5
 210,B365A,1.22
+210,BWH,12
+210,BWD,5
+210,BWA,1.25
 211,Date,08/03/15
 211,HomeTeam,Boavista
 211,AwayTeam,Guimaraes
@@ -2530,6 +3160,9 @@
 211,B365H,3.6
 211,B365D,3.3
 211,B365A,2.05
+211,BWH,4.1
+211,BWD,3.4
+211,BWA,1.85
 212,Date,08/03/15
 212,HomeTeam,Estoril
 212,AwayTeam,Gil Vicente
@@ -2542,6 +3175,9 @@
 212,B365H,1.73
 212,B365D,3.6
 212,B365A,4.75
+212,BWH,1.62
+212,BWD,3.6
+212,BWA,5.5
 213,Date,08/03/15
 213,HomeTeam,Maritimo
 213,AwayTeam,Pacos Ferreira
@@ -2554,6 +3190,9 @@
 213,B365H,2.3
 213,B365D,3.2
 213,B365A,3.2
+213,BWH,2.35
+213,BWD,3.1
+213,BWA,3
 214,Date,08/03/15
 214,HomeTeam,Moreirense
 214,AwayTeam,Academica
@@ -2566,6 +3205,9 @@
 214,B365H,1.91
 214,B365D,3.3
 214,B365A,4.2
+214,BWH,1.95
+214,BWD,3.2
+214,BWA,4
 215,Date,09/03/15
 215,HomeTeam,Rio Ave
 215,AwayTeam,Nacional
@@ -2578,6 +3220,9 @@
 215,B365H,2.3
 215,B365D,3.2
 215,B365A,3.2
+215,BWH,2.35
+215,BWD,3
+215,BWA,3.1
 216,Date,09/03/15
 216,HomeTeam,Sp Lisbon
 216,AwayTeam,Penafiel
@@ -2590,6 +3235,9 @@
 216,B365H,1.17
 216,B365D,7.5
 216,B365A,15
+216,BWH,1.18
+216,BWD,6.25
+216,BWA,13.5
 217,Date,13/03/15
 217,HomeTeam,Pacos Ferreira
 217,AwayTeam,Boavista
@@ -2602,6 +3250,9 @@
 217,B365H,1.73
 217,B365D,3.5
 217,B365A,5
+217,BWH,1.75
+217,BWD,3.5
+217,BWA,4.5
 218,Date,14/03/15
 218,HomeTeam,Belenenses
 218,AwayTeam,Estoril
@@ -2614,6 +3265,9 @@
 218,B365H,2.63
 218,B365D,3.1
 218,B365A,2.75
+218,BWH,2.55
+218,BWD,2.9
+218,BWA,2.9
 219,Date,14/03/15
 219,HomeTeam,Benfica
 219,AwayTeam,Sp Braga
@@ -2626,6 +3280,9 @@
 219,B365H,1.4
 219,B365D,4.33
 219,B365A,8
+219,BWH,1.45
+219,BWD,4
+219,BWA,7
 220,Date,14/03/15
 220,HomeTeam,Guimaraes
 220,AwayTeam,Setubal
@@ -2638,6 +3295,9 @@
 220,B365H,1.7
 220,B365D,3.6
 220,B365A,5
+220,BWH,1.67
+220,BWD,3.5
+220,BWA,5
 221,Date,15/03/15
 221,HomeTeam,Academica
 221,AwayTeam,Nacional
@@ -2650,6 +3310,9 @@
 221,B365H,3
 221,B365D,3.2
 221,B365A,2.38
+221,BWH,3.1
+221,BWD,3
+221,BWA,2.35
 222,Date,15/03/15
 222,HomeTeam,Gil Vicente
 222,AwayTeam,Moreirense
@@ -2662,6 +3325,9 @@
 222,B365H,2.6
 222,B365D,3.1
 222,B365A,2.8
+222,BWH,2.65
+222,BWD,2.95
+222,BWA,2.75
 223,Date,15/03/15
 223,HomeTeam,Maritimo
 223,AwayTeam,Sp Lisbon
@@ -2674,6 +3340,9 @@
 223,B365H,6.5
 223,B365D,3.6
 223,B365A,1.57
+223,BWH,5
+223,BWD,3.8
+223,BWA,1.62
 224,Date,15/03/15
 224,HomeTeam,Penafiel
 224,AwayTeam,Rio Ave
@@ -2686,6 +3355,9 @@
 224,B365H,3.5
 224,B365D,3.1
 224,B365A,2.2
+224,BWH,3.25
+224,BWD,3.1
+224,BWA,2.2
 225,Date,15/03/15
 225,HomeTeam,Porto
 225,AwayTeam,Arouca
@@ -2698,6 +3370,9 @@
 225,B365H,1.13
 225,B365D,7.5
 225,B365A,23
+225,BWH,1.11
+225,BWD,8
+225,BWA,19.5
 226,Date,20/03/15
 226,HomeTeam,Sp Braga
 226,AwayTeam,Academica
@@ -2710,6 +3385,9 @@
 226,B365H,1.33
 226,B365D,4.33
 226,B365A,8
+226,BWH,1.4
+226,BWD,4.25
+226,BWA,7.5
 227,Date,21/03/15
 227,HomeTeam,Estoril
 227,AwayTeam,Penafiel
@@ -2722,6 +3400,9 @@
 227,B365H,1.53
 227,B365D,3.6
 227,B365A,5.75
+227,BWH,1.6
+227,BWD,3.6
+227,BWA,5.5
 228,Date,21/03/15
 228,HomeTeam,Nacional
 228,AwayTeam,Porto
@@ -2734,6 +3415,9 @@
 228,B365H,9
 228,B365D,4.33
 228,B365A,1.33
+228,BWH,9.5
+228,BWD,4.1
+228,BWA,1.36
 229,Date,21/03/15
 229,HomeTeam,Rio Ave
 229,AwayTeam,Benfica
@@ -2746,6 +3430,9 @@
 229,B365H,8
 229,B365D,4.5
 229,B365A,1.33
+229,BWH,8.5
+229,BWD,4.4
+229,BWA,1.36
 230,Date,22/03/15
 230,HomeTeam,Arouca
 230,AwayTeam,Gil Vicente
@@ -2758,6 +3445,9 @@
 230,B365H,2.15
 230,B365D,3.1
 230,B365A,3.25
+230,BWH,2.15
+230,BWD,3.2
+230,BWA,3.3
 231,Date,22/03/15
 231,HomeTeam,Boavista
 231,AwayTeam,Belenenses
@@ -2770,6 +3460,9 @@
 231,B365H,2.4
 231,B365D,3.1
 231,B365A,2.8
+231,BWH,2.5
+231,BWD,3.1
+231,BWA,2.8
 232,Date,22/03/15
 232,HomeTeam,Moreirense
 232,AwayTeam,Maritimo
@@ -2782,6 +3475,9 @@
 232,B365H,2.25
 232,B365D,3.2
 232,B365A,3
+232,BWH,2.25
+232,BWD,3.2
+232,BWA,3.1
 233,Date,22/03/15
 233,HomeTeam,Sp Lisbon
 233,AwayTeam,Guimaraes
@@ -2794,6 +3490,9 @@
 233,B365H,1.36
 233,B365D,4.2
 233,B365A,8
+233,BWH,1.44
+233,BWD,4.2
+233,BWA,7
 234,Date,23/03/15
 234,HomeTeam,Setubal
 234,AwayTeam,Pacos Ferreira
@@ -2806,6 +3505,9 @@
 234,B365H,2.63
 234,B365D,3
 234,B365A,2.6
+234,BWH,2.6
+234,BWD,3
+234,BWA,2.75
 235,Date,03/04/15
 235,HomeTeam,Academica
 235,AwayTeam,Rio Ave
@@ -2818,6 +3520,9 @@
 235,B365H,2.45
 235,B365D,3.2
 235,B365A,2.9
+235,BWH,2.65
+235,BWD,2.85
+235,BWA,2.85
 236,Date,03/04/15
 236,HomeTeam,Gil Vicente
 236,AwayTeam,Sp Braga
@@ -2830,6 +3535,9 @@
 236,B365H,5
 236,B365D,3.5
 236,B365A,1.73
+236,BWH,4.5
+236,BWD,3.6
+236,BWA,1.73
 237,Date,03/04/15
 237,HomeTeam,Guimaraes
 237,AwayTeam,Arouca
@@ -2842,6 +3550,9 @@
 237,B365H,1.67
 237,B365D,3.6
 237,B365A,5.25
+237,BWH,1.65
+237,BWD,3.6
+237,BWA,5
 238,Date,04/04/15
 238,HomeTeam,Belenenses
 238,AwayTeam,Moreirense
@@ -2854,6 +3565,9 @@
 238,B365H,2.15
 238,B365D,3
 238,B365A,3.75
+238,BWH,2.2
+238,BWD,2.95
+238,BWA,3.5
 239,Date,04/04/15
 239,HomeTeam,Benfica
 239,AwayTeam,Nacional
@@ -2866,6 +3580,9 @@
 239,B365H,1.22
 239,B365D,6
 239,B365A,12
+239,BWH,1.18
+239,BWD,6
+239,BWA,15.5
 240,Date,04/04/15
 240,HomeTeam,Pacos Ferreira
 240,AwayTeam,Sp Lisbon
@@ -2878,6 +3595,9 @@
 240,B365H,5.75
 240,B365D,3.9
 240,B365A,1.57
+240,BWH,5.5
+240,BWD,3.8
+240,BWA,1.57
 241,Date,04/04/15
 241,HomeTeam,Penafiel
 241,AwayTeam,Boavista
@@ -2890,6 +3610,9 @@
 241,B365H,2.5
 241,B365D,3.1
 241,B365A,2.9
+241,BWH,2.5
+241,BWD,3.1
+241,BWA,2.8
 242,Date,06/04/15
 242,HomeTeam,Maritimo
 242,AwayTeam,Setubal
@@ -2902,6 +3625,9 @@
 242,B365H,1.95
 242,B365D,3.3
 242,B365A,4
+242,BWH,1.83
+242,BWD,3.3
+242,BWA,4.4
 243,Date,06/04/15
 243,HomeTeam,Porto
 243,AwayTeam,Estoril
@@ -2914,6 +3640,9 @@
 243,B365H,1.18
 243,B365D,7
 243,B365A,13
+243,BWH,1.14
+243,BWD,6.75
+243,BWA,17
 244,Date,10/04/15
 244,HomeTeam,Arouca
 244,AwayTeam,Belenenses
@@ -2926,6 +3655,9 @@
 244,B365H,2.25
 244,B365D,3
 244,B365A,3.5
+244,BWH,2.35
+244,BWD,3.1
+244,BWA,3.2
 245,Date,11/04/15
 245,HomeTeam,Benfica
 245,AwayTeam,Academica
@@ -2938,6 +3670,9 @@
 245,B365H,1.14
 245,B365D,7.5
 245,B365A,17
+245,BWH,1.13
+245,BWD,7.5
+245,BWA,15.5
 246,Date,11/04/15
 246,HomeTeam,Boavista
 246,AwayTeam,Maritimo
@@ -2950,6 +3685,9 @@
 246,B365H,2.5
 246,B365D,3.2
 246,B365A,2.88
+246,BWH,2.35
+246,BWD,3.1
+246,BWA,3
 247,Date,11/04/15
 247,HomeTeam,Moreirense
 247,AwayTeam,Guimaraes
@@ -2962,6 +3700,9 @@
 247,B365H,3
 247,B365D,3.2
 247,B365A,2.38
+247,BWH,2.75
+247,BWD,3.1
+247,BWA,2.55
 248,Date,11/04/15
 248,HomeTeam,Rio Ave
 248,AwayTeam,Porto
@@ -2974,6 +3715,9 @@
 248,B365H,9
 248,B365D,5.25
 248,B365A,1.3
+248,BWH,8.25
+248,BWD,4.6
+248,BWA,1.35
 249,Date,12/04/15
 249,HomeTeam,Nacional
 249,AwayTeam,Gil Vicente
@@ -2986,6 +3730,9 @@
 249,B365H,1.57
 249,B365D,3.6
 249,B365A,6.5
+249,BWH,1.55
+249,BWD,3.75
+249,BWA,6
 250,Date,12/04/15
 250,HomeTeam,Setubal
 250,AwayTeam,Sp Lisbon
@@ -2998,6 +3745,9 @@
 250,B365H,7.5
 250,B365D,4.2
 250,B365A,1.44
+250,BWH,6.5
+250,BWD,4
+250,BWA,1.48
 251,Date,12/04/15
 251,HomeTeam,Sp Braga
 251,AwayTeam,Penafiel
@@ -3010,6 +3760,9 @@
 251,B365H,1.22
 251,B365D,6
 251,B365A,13
+251,BWH,1.25
+251,BWD,5.5
+251,BWA,10
 252,Date,13/04/15
 252,HomeTeam,Estoril
 252,AwayTeam,Pacos Ferreira
@@ -3022,6 +3775,9 @@
 252,B365H,2.25
 252,B365D,3.2
 252,B365A,3.25
+252,BWH,2.2
+252,BWD,3.4
+252,BWA,3
 253,Date,17/04/15
 253,HomeTeam,Guimaraes
 253,AwayTeam,Sp Braga
@@ -3034,6 +3790,9 @@
 253,B365H,3.4
 253,B365D,3.3
 253,B365A,2.15
+253,BWH,3.6
+253,BWD,3.3
+253,BWA,2
 254,Date,18/04/15
 254,HomeTeam,Belenenses
 254,AwayTeam,Benfica
@@ -3046,6 +3805,9 @@
 254,B365H,15
 254,B365D,6
 254,B365A,1.2
+254,BWH,15.5
+254,BWD,5.5
+254,BWA,1.2
 255,Date,18/04/15
 255,HomeTeam,Porto
 255,AwayTeam,Academica
@@ -3058,6 +3820,9 @@
 255,B365H,1.08
 255,B365D,10
 255,B365A,26
+255,BWH,1.08
+255,BWD,8.5
+255,BWA,29
 256,Date,19/04/15
 256,HomeTeam,Gil Vicente
 256,AwayTeam,Rio Ave
@@ -3070,6 +3835,9 @@
 256,B365H,3
 256,B365D,3
 256,B365A,2.5
+256,BWH,2.9
+256,BWD,3.1
+256,BWA,2.45
 257,Date,19/04/15
 257,HomeTeam,Pacos Ferreira
 257,AwayTeam,Moreirense
@@ -3082,6 +3850,9 @@
 257,B365H,2
 257,B365D,3.3
 257,B365A,3.8
+257,BWH,2.05
+257,BWD,3.2
+257,BWA,3.6
 258,Date,19/04/15
 258,HomeTeam,Penafiel
 258,AwayTeam,Arouca
@@ -3094,6 +3865,9 @@
 258,B365H,3
 258,B365D,3
 258,B365A,2.5
+258,BWH,2.9
+258,BWD,2.95
+258,BWA,2.5
 259,Date,19/04/15
 259,HomeTeam,Setubal
 259,AwayTeam,Estoril
@@ -3106,6 +3880,9 @@
 259,B365H,2.7
 259,B365D,3.1
 259,B365A,2.7
+259,BWH,2.6
+259,BWD,3
+259,BWA,2.75
 260,Date,19/04/15
 260,HomeTeam,Sp Lisbon
 260,AwayTeam,Boavista
@@ -3118,6 +3895,9 @@
 260,B365H,1.17
 260,B365D,6.5
 260,B365A,19
+260,BWH,1.16
+260,BWD,6
+260,BWA,20
 261,Date,20/04/15
 261,HomeTeam,Maritimo
 261,AwayTeam,Nacional
@@ -3130,6 +3910,9 @@
 261,B365H,2.5
 261,B365D,3.1
 261,B365A,2.9
+261,BWH,2.4
+261,BWD,3
+261,BWA,3
 262,Date,24/04/15
 262,HomeTeam,Sp Braga
 262,AwayTeam,Belenenses
@@ -3142,6 +3925,9 @@
 262,B365H,1.4
 262,B365D,4.2
 262,B365A,9
+262,BWH,1.4
+262,BWD,4.33
+262,BWA,7.5
 263,Date,25/04/15
 263,HomeTeam,Academica
 263,AwayTeam,Gil Vicente
@@ -3154,6 +3940,9 @@
 263,B365H,2.05
 263,B365D,3.2
 263,B365A,3.8
+263,BWH,1.95
+263,BWD,3.25
+263,BWA,3.8
 264,Date,25/04/15
 264,HomeTeam,Estoril
 264,AwayTeam,Maritimo
@@ -3166,6 +3955,9 @@
 264,B365H,2
 264,B365D,3.3
 264,B365A,3.75
+264,BWH,2.05
+264,BWD,3.2
+264,BWA,3.6
 265,Date,25/04/15
 265,HomeTeam,Rio Ave
 265,AwayTeam,Guimaraes
@@ -3178,6 +3970,9 @@
 265,B365H,2.63
 265,B365D,3.1
 265,B365A,2.8
+265,BWH,2.5
+265,BWD,3.1
+265,BWA,2.8
 266,Date,26/04/15
 266,HomeTeam,Arouca
 266,AwayTeam,Pacos Ferreira
@@ -3190,6 +3985,9 @@
 266,B365H,2.7
 266,B365D,3
 266,B365A,2.75
+266,BWH,2.6
+266,BWD,3.1
+266,BWA,2.7
 267,Date,26/04/15
 267,HomeTeam,Benfica
 267,AwayTeam,Porto
@@ -3202,6 +4000,9 @@
 267,B365H,2.4
 267,B365D,3.3
 267,B365A,2.88
+267,BWH,2.4
+267,BWD,3.25
+267,BWA,2.8
 268,Date,26/04/15
 268,HomeTeam,Boavista
 268,AwayTeam,Setubal
@@ -3214,6 +4015,9 @@
 268,B365H,2.4
 268,B365D,3.1
 268,B365A,3.1
+268,BWH,2.4
+268,BWD,3.1
+268,BWA,2.9
 269,Date,26/04/15
 269,HomeTeam,Nacional
 269,AwayTeam,Penafiel
@@ -3226,6 +4030,9 @@
 269,B365H,1.57
 269,B365D,3.6
 269,B365A,6.5
+269,BWH,1.57
+269,BWD,3.6
+269,BWA,6
 270,Date,27/04/15
 270,HomeTeam,Moreirense
 270,AwayTeam,Sp Lisbon
@@ -3238,6 +4045,9 @@
 270,B365H,7
 270,B365D,3.75
 270,B365A,1.53
+270,BWH,5.75
+270,BWD,3.8
+270,BWA,1.55
 271,Date,01/05/15
 271,HomeTeam,Guimaraes
 271,AwayTeam,Estoril
@@ -3250,6 +4060,9 @@
 271,B365H,1.85
 271,B365D,3.4
 271,B365A,4.33
+271,BWH,1.8
+271,BWD,3.5
+271,BWA,4.2
 272,Date,02/05/15
 272,HomeTeam,Gil Vicente
 272,AwayTeam,Benfica
@@ -3262,6 +4075,9 @@
 272,B365H,13
 272,B365D,6.5
 272,B365A,1.2
+272,BWH,12.5
+272,BWD,6
+272,BWA,1.2
 273,Date,02/05/15
 273,HomeTeam,Sp Lisbon
 273,AwayTeam,Nacional
@@ -3274,6 +4090,9 @@
 273,B365H,1.33
 273,B365D,5
 273,B365A,9
+273,BWH,1.25
+273,BWD,5.25
+273,BWA,11
 274,Date,03/05/15
 274,HomeTeam,Boavista
 274,AwayTeam,Moreirense
@@ -3286,6 +4105,9 @@
 274,B365H,2.5
 274,B365D,3.1
 274,B365A,2.9
+274,BWH,2.6
+274,BWD,3.1
+274,BWA,2.7
 275,Date,03/05/15
 275,HomeTeam,Maritimo
 275,AwayTeam,Arouca
@@ -3298,6 +4120,9 @@
 275,B365H,2.05
 275,B365D,3.2
 275,B365A,3.75
+275,BWH,2
+275,BWD,3.1
+275,BWA,3.9
 276,Date,03/05/15
 276,HomeTeam,Penafiel
 276,AwayTeam,Academica
@@ -3310,6 +4135,9 @@
 276,B365H,3.1
 276,B365D,3.1
 276,B365A,2.4
+276,BWH,3.1
+276,BWD,3.2
+276,BWA,2.25
 277,Date,03/05/15
 277,HomeTeam,Setubal
 277,AwayTeam,Porto
@@ -3322,6 +4150,9 @@
 277,B365H,13
 277,B365D,6.5
 277,B365A,1.2
+277,BWH,14.5
+277,BWD,6
+277,BWA,1.19
 278,Date,04/05/15
 278,HomeTeam,Belenenses
 278,AwayTeam,Rio Ave
@@ -3334,6 +4165,9 @@
 278,B365H,2.25
 278,B365D,3.2
 278,B365A,3.25
+278,BWH,2.25
+278,BWD,3.1
+278,BWA,3.2
 279,Date,04/05/15
 279,HomeTeam,Pacos Ferreira
 279,AwayTeam,Sp Braga
@@ -3346,6 +4180,9 @@
 279,B365H,3.5
 279,B365D,3.2
 279,B365A,2.15
+279,BWH,3.4
+279,BWD,3.2
+279,BWA,2.1
 280,Date,09/05/15
 280,HomeTeam,Academica
 280,AwayTeam,Belenenses
@@ -3358,6 +4195,9 @@
 280,B365H,2.5
 280,B365D,3
 280,B365A,3
+280,BWH,2.4
+280,BWD,2.95
+280,BWA,3.1
 281,Date,09/05/15
 281,HomeTeam,Benfica
 281,AwayTeam,Penafiel
@@ -3370,6 +4210,9 @@
 281,B365H,1.05
 281,B365D,13
 281,B365A,26
+281,BWH,1.05
+281,BWD,11
+281,BWA,26
 282,Date,09/05/15
 282,HomeTeam,Rio Ave
 282,AwayTeam,Pacos Ferreira
@@ -3382,6 +4225,9 @@
 282,B365H,2.38
 282,B365D,3.4
 282,B365A,2.88
+282,BWH,2.35
+282,BWD,3.3
+282,BWA,2.85
 283,Date,09/05/15
 283,HomeTeam,Sp Braga
 283,AwayTeam,Maritimo
@@ -3394,6 +4240,9 @@
 283,B365H,1.44
 283,B365D,4.33
 283,B365A,7
+283,BWH,1.42
+283,BWD,4.25
+283,BWA,7
 284,Date,10/05/15
 284,HomeTeam,Arouca
 284,AwayTeam,Boavista
@@ -3406,6 +4255,9 @@
 284,B365H,1.91
 284,B365D,3.4
 284,B365A,4
+284,BWH,
+284,BWD,
+284,BWA,
 285,Date,10/05/15
 285,HomeTeam,Estoril
 285,AwayTeam,Sp Lisbon
@@ -3418,6 +4270,9 @@
 285,B365H,5.5
 285,B365D,3.5
 285,B365A,1.67
+285,BWH,5.25
+285,BWD,3.4
+285,BWA,1.67
 286,Date,10/05/15
 286,HomeTeam,Moreirense
 286,AwayTeam,Setubal
@@ -3430,6 +4285,9 @@
 286,B365H,2.1
 286,B365D,3.4
 286,B365A,3.4
+286,BWH,2
+286,BWD,3.4
+286,BWA,3.5
 287,Date,10/05/15
 287,HomeTeam,Porto
 287,AwayTeam,Gil Vicente
@@ -3442,6 +4300,9 @@
 287,B365H,1.06
 287,B365D,12
 287,B365A,26
+287,BWH,1.06
+287,BWD,11
+287,BWA,21
 288,Date,11/05/15
 288,HomeTeam,Nacional
 288,AwayTeam,Guimaraes
@@ -3454,6 +4315,9 @@
 288,B365H,2.3
 288,B365D,3.4
 288,B365A,3
+288,BWH,2.35
+288,BWD,3.4
+288,BWA,2.75
 289,Date,17/05/15
 289,HomeTeam,Belenenses
 289,AwayTeam,Porto
@@ -3466,6 +4330,9 @@
 289,B365H,15
 289,B365D,6
 289,B365A,1.2
+289,BWH,13
+289,BWD,5.75
+289,BWA,1.2
 290,Date,17/05/15
 290,HomeTeam,Guimaraes
 290,AwayTeam,Benfica
@@ -3478,6 +4345,9 @@
 290,B365H,11
 290,B365D,6
 290,B365A,1.25
+290,BWH,10.5
+290,BWD,5.5
+290,BWA,1.25
 291,Date,17/05/15
 291,HomeTeam,Maritimo
 291,AwayTeam,Rio Ave
@@ -3490,6 +4360,9 @@
 291,B365H,2.1
 291,B365D,3.3
 291,B365A,3.5
+291,BWH,2.15
+291,BWD,3.25
+291,BWA,3.25
 292,Date,17/05/15
 292,HomeTeam,Moreirense
 292,AwayTeam,Estoril
@@ -3502,6 +4375,9 @@
 292,B365H,2.25
 292,B365D,3.25
 292,B365A,3.2
+292,BWH,2.3
+292,BWD,3.2
+292,BWA,3
 293,Date,17/05/15
 293,HomeTeam,Pacos Ferreira
 293,AwayTeam,Academica
@@ -3514,6 +4390,9 @@
 293,B365H,1.8
 293,B365D,3.6
 293,B365A,4.33
+293,BWH,1.75
+293,BWD,3.6
+293,BWA,4.33
 294,Date,17/05/15
 294,HomeTeam,Penafiel
 294,AwayTeam,Gil Vicente
@@ -3526,6 +4405,9 @@
 294,B365H,3.1
 294,B365D,3.25
 294,B365A,2.3
+294,BWH,3.1
+294,BWD,3.2
+294,BWA,2.25
 295,Date,17/05/15
 295,HomeTeam,Setubal
 295,AwayTeam,Arouca
@@ -3538,6 +4420,9 @@
 295,B365H,2.2
 295,B365D,3.2
 295,B365A,3.4
+295,BWH,2.15
+295,BWD,3.2
+295,BWA,3.3
 296,Date,17/05/15
 296,HomeTeam,Sp Lisbon
 296,AwayTeam,Sp Braga
@@ -3550,6 +4435,9 @@
 296,B365H,1.73
 296,B365D,3.6
 296,B365A,4.75
+296,BWH,1.67
+296,BWD,3.7
+296,BWA,4.75
 297,Date,18/05/15
 297,HomeTeam,Boavista
 297,AwayTeam,Nacional
@@ -3562,6 +4450,9 @@
 297,B365H,3
 297,B365D,3.2
 297,B365A,2.4
+297,BWH,2.85
+297,BWD,3.2
+297,BWA,2.4
 298,Date,22/05/15
 298,HomeTeam,Porto
 298,AwayTeam,Penafiel
@@ -3574,6 +4465,9 @@
 298,B365H,1.06
 298,B365D,11
 298,B365A,26
+298,BWH,1.05
+298,BWD,12
+298,BWA,23
 299,Date,23/05/15
 299,HomeTeam,Academica
 299,AwayTeam,Guimaraes
@@ -3586,6 +4480,9 @@
 299,B365H,3
 299,B365D,3.5
 299,B365A,2.25
+299,BWH,3
+299,BWD,3.25
+299,BWA,2.3
 300,Date,23/05/15
 300,HomeTeam,Arouca
 300,AwayTeam,Moreirense
@@ -3598,6 +4495,9 @@
 300,B365H,2.15
 300,B365D,3.3
 300,B365A,3.4
+300,BWH,2.25
+300,BWD,3.2
+300,BWA,3.1
 301,Date,23/05/15
 301,HomeTeam,Benfica
 301,AwayTeam,Maritimo
@@ -3610,6 +4510,9 @@
 301,B365H,1.17
 301,B365D,7.5
 301,B365A,13
+301,BWH,1.17
+301,BWD,7
+301,BWA,12.5
 302,Date,23/05/15
 302,HomeTeam,Estoril
 302,AwayTeam,Boavista
@@ -3622,6 +4525,9 @@
 302,B365H,1.8
 302,B365D,3.5
 302,B365A,4.5
+302,BWH,1.8
+302,BWD,3.4
+302,BWA,4.25
 303,Date,23/05/15
 303,HomeTeam,Gil Vicente
 303,AwayTeam,Belenenses
@@ -3634,6 +4540,9 @@
 303,B365H,4.33
 303,B365D,3.6
 303,B365A,1.8
+303,BWH,4.6
+303,BWD,3.6
+303,BWA,1.72
 304,Date,23/05/15
 304,HomeTeam,Nacional
 304,AwayTeam,Pacos Ferreira
@@ -3646,6 +4555,9 @@
 304,B365H,2.2
 304,B365D,3.25
 304,B365A,3.3
+304,BWH,2.2
+304,BWD,3.25
+304,BWA,3.1
 305,Date,23/05/15
 305,HomeTeam,Rio Ave
 305,AwayTeam,Sp Lisbon
@@ -3658,6 +4570,9 @@
 305,B365H,5.75
 305,B365D,3.8
 305,B365A,1.6
+305,BWH,5
+305,BWD,3.75
+305,BWA,1.62
 306,Date,23/05/15
 306,HomeTeam,Sp Braga
 306,AwayTeam,Setubal
@@ -3670,3 +4585,6 @@
 306,B365H,1.4
 306,B365D,4.5
 306,B365A,7.5
+306,BWH,1.33
+306,BWD,4.6
+306,BWA,8.75

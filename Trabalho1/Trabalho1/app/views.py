@@ -12,6 +12,7 @@ from app.simpleGraph import simpleGraph
 from app.forms import addTripleStore
 from app.forms import removeTripleStore
 from app.forms import pesquisarTripleStore
+#from app.forms import gameSelectChoices
 from pathlib import Path
 from graphviz import Source
 
@@ -37,18 +38,71 @@ def home(request):
         }
     )
 
-def contact(request):
+def jogo(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/contact.html',
-        {
-            'title':'Contact',
-            'message':'Your contact page.',
-            'year':datetime.now().year,
-        }
-    )
+    TeamsList = []
+    NotSameTeam = False
+    aux = False
+    HomeTeam = None
+    AwayTeam = None
+    B365H = None
+    B365D = None
+    B365A = None
+    BWH = None
+    BWD = None
+    BWA = None
+    FTHG = None
+    FTAG = None
+    FTR = None
+
+    teams = sg.query([('?id_jogo','HomeTeam','?TeamName')])
+    for TeamName in teams:
+        team = TeamName.get("TeamName")
+        TeamsList.append(team)
+
+    TeamsList = sorted(set(TeamsList))
+    print(TeamsList)
+
+    assert isinstance(request, HttpRequest)
+    if 'game' in request.POST :
+        HomeTeam = request.POST['hometeam']
+        AwayTeam = request.POST['awayteam']
+        
+        print(HomeTeam)
+        print(AwayTeam)
+
+        if HomeTeam==AwayTeam:
+            NotSameTeam = True
+        else:
+            aux = True
+
+        gameInformation = sg.query([('?id_jogo','HomeTeam',HomeTeam),
+                                   ('?id_jogo','AwayTeam',AwayTeam),
+                                   ('?id_jogo','FTHG', '?GolsHome'),
+                                   ('?id_jogo','FTAG', '?GolsAway'),
+                                   ('?id_jogo','FTR', '?FinalResult'),
+                                   ('?id_jogo','B365H','?WinHomeOddsB365'),
+                                   ('?id_jogo','B365D','?DrawOddsB365'),
+                                   ('?id_jogo','B365A','?WinAwayOddsB365'),
+                                   ('?id_jogo', 'BWH', '?WinHomeOddsBW'),
+                                   ('?id_jogo', 'BWD', '?DrawOddsBW'),
+                                   ('?id_jogo', 'BWA', '?WinAwayOddsBW')])
+
+        print(gameInformation)
+
+        for i in gameInformation:
+            B365H = i.get('WinHomeOddsB365')
+            B365D = i.get('DrawOddsB365')
+            B365A = i.get('WinAwayOddsB365')
+            BWH = i.get('WinHomeOddsBW')
+            BWD = i.get('DrawOddsBW')
+            BWA = i.get('WinAwayOddsBW')
+            FTHG = i.get('GolsHome')
+            FTAG = i.get('GolsAway')
+            FTR = i.get('FinalResult')
+
+    return render(request,'app/jogo.html',{'title':'Game','message':'Chose the teams','teamlist':TeamsList,'NotSameTeam':NotSameTeam,'aux':aux,'HomeTeam':HomeTeam,'AwayTeam':AwayTeam,'B365H':B365H,'B365D':B365D,'B365A':B365A,'BWH':BWH,'BWD':BWD,'BWA':BWA,'FTHG':FTHG,'FTAG':FTAG,'FTR':FTR})
 
 def about(request):
     """Renders the about page."""

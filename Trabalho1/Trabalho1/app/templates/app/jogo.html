@@ -1,0 +1,143 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<script>
+    $(document).ready(function() {
+        $(".HometeamDiv").hide();
+        $(".draw").hide();
+        $(".AwayteamDiv").hide();
+        $("#hometeamSelect").click(function() {
+            $(".HometeamDiv").show();
+            $(".draw").hide();
+            $(".AwayteamDiv").hide();
+        });
+        $("#drawchoise").click(function() {
+            $(".HometeamDiv").hide();
+            $(".draw").show();
+            $(".AwayteamDiv").hide();
+        });
+        $("#awayteamSelect").click(function() {
+            $(".HometeamDiv").hide();
+            $(".AwayteamDiv").show();
+            $(".draw").hide();
+        });
+        $("#restart").click(function() {
+            alert("ola");
+            location.reload(); 
+        });        
+    });
+</script>
+
+<h2>{{ title }}</h2>
+
+ <div class="jumbotron">
+    <h3>{{ message }}</h3>
+    <form action="{% url 'jogo' %}" method="post">
+        {% csrf_token %}               
+        <select name="hometeam" id="hometeam">
+            <option value="">Home Team</option>
+            {% for story in teamlist %}
+                <option value="{{ story }}">{{ story }}</option>
+            {% endfor %}
+        </select>
+        <select name="awayteam" id="awayteam">
+            <option value="">Away Team</option>
+            {% for story in teamlist %}
+                <option value="{{ story }}">{{ story }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" name ="game" value="Submit" id="gameButton">
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-12">  
+        {% if NotSameTeam %}
+            <script>alert("Os clubes nao podem ser iguais")</script>
+        {% else %}
+            {% if aux %}
+                <h3 class="gameClubs">{{HomeTeam}}  &nbsp &nbsp   -   &nbsp &nbsp   {{AwayTeam}}</h3>
+                <div class="game_body" id="game_bodyid">
+                    {% load staticfiles %}
+                    {% static "" as baseUrl %}
+                    <div class="clubsImages"><img src="{{ baseUrl }}app/images/{{HomeTeam}}.png" alt="{{HomeTeam}}" height="100" width="100"> <b>VS</b> <img src="{{ baseUrl }}app/images/{{AwayTeam}}.png" alt="{{AwayTeam}}" height="100" width="100"></div>
+                </div>
+                <hr />
+                <div>
+                    <table class="oddTable">
+                        <tr>
+                            <th>Sources</th>
+                            <th>Win Odds</th>
+                            <th>Draw Odds</th> 
+                            <th>Lose Odds</th>
+                        </tr>
+                        <tr>
+                            <td>Bet365</td>
+                            <td>{{B365H}}</td>
+                            <td>{{B365A}}</td>
+                            <td>{{B365D}}</td>
+                        </tr>
+                        <tr>
+                            <td>BetWin</td>
+                            <td>{{BWH}}</td>
+                            <td>{{BWA}}</td>
+                            <td>{{BWD}}</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <p>Note: The odds are applied to the home team.</p>
+                </div>
+                <hr />
+                <h4 class="gameClubs">Who won?</h4>
+                <p class="gameClubs"><button type="button" class="btn btn-default" id="hometeamSelect">{{HomeTeam}}</button>&nbsp-&nbsp<button type="button" class="btn btn-default" id="drawchoise">Draw</button>&nbsp-&nbsp<button type="button" class="btn btn-default" id="awayteamSelect">{{AwayTeam}}</button></p>
+                <hr />
+                <div class="HometeamDiv gameClubs" id="HometeamDiv">
+                    <h3>{{HomeTeam}} : {{FTHG}} - {{AwayTeam}} : {{FTAG}}</h3>
+                    <p>You choosed: {{HomeTeam}}</p>
+                    <p> </p>
+                    {% if FTR == 'H' %}
+                        <h4>Winner: {{HomeTeam}}</h4>
+                        <img src="{{ baseUrl }}app/images/Check.png" alt="Check.png" height="100" width="100">
+                    {% elif FTR == 'D' %}
+                        <h4>The result of the game was a Draw</h4>
+                        <img src="{{ baseUrl }}app/images/cross.png" alt="cross.png" height="100" width="100">
+                    {% elif FTR == 'A' %}
+                        <h4>Winner: {{AwayTeam}}</h4>
+                        <img src="{{ baseUrl }}app/images/cross.png" alt="cross.png" height="100" width="100">
+                    {% endif %}
+                </div>
+                <div class="draw gameClubs" id="drawDiv">
+                    <h3>{{HomeTeam}} : {{FTHG}} - {{AwayTeam}} : {{FTAG}}</h3>
+                    <p>You choosed: Draw</p>
+                    <p> </p>
+                    {% if FTR == 'H' %}
+                        <h4>Winner: {{HomeTeam}}</h4>
+                        <img src="{{ baseUrl }}app/images/cross.png" alt="cross.png" height="100" width="100">
+                    {% elif FTR == 'D' %}
+                        <h4>The result of the game was a Draw</h4>
+                        <img src="{{ baseUrl }}app/images/Check.png" alt="Check.png" height="100" width="100">
+                    {% elif FTR == 'A' %}
+                        <h4>Winner: {{AwayTeam}}</h4>
+                        <img src="{{ baseUrl }}app/images/cross.png" alt="cross.png" height="100" width="100">
+                    {% endif %}
+                </div>
+                <div class="AwayteamDiv gameClubs" id="AwayteamDiv">
+                    <h3>{{HomeTeam}} : {{FTHG}} - {{AwayTeam}} : {{FTAG}}</h3>
+                    <p>You choosed: {{AwayTeam}}</p>
+                    <p> </p>
+                    {% if FTR == 'H' %}
+                        <h4>Winner: {{HomeTeam}}</h4>
+                        <img src="{{ baseUrl }}app/images/cross.png" alt="cross.png" height="100" width="100">
+                    {% elif FTR == 'D' %}
+                        <h4>The result of the game was a Draw</h4>
+                        <img src="{{ baseUrl }}app/images/cross.png" alt="cross.png" height="100" width="100">
+                    {% elif FTR == 'A' %}
+                        <h4>Winner: {{AwayTeam}}</h4>
+                        <img src="{{ baseUrl }}app/images/Check.png" alt="Check.png" height="100" width="100">
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
