@@ -1,5 +1,3 @@
-
-
 class InferenceRule:
     """
     Implementa a regra base para as inefrencias
@@ -9,18 +7,18 @@ class InferenceRule:
 
     def maketriples(self,binding):        
       
-        return self._maketriples(**binding)
+        return self.createTriples(**binding)
 
 #goleadas
 class routRule(InferenceRule):
     def getqueries(self):
-        jogos_golos = [('?jogo', 'FTHG', '?golosH'),
-                         ('?jogo', 'FTAG', '?golosA')]       
-        return [jogos_golos]
+        gameGols = [('?game', 'FTHG', '?HomeGols'), #golosH
+                         ('?game', 'FTAG', '?AwayGols')]       
+        return [gameGols]
 
-    def _maketriples(self, jogo, golosA, golosH):        
-        if int(golosA)-int(golosH)>2 :
-            return [(jogo, "Goleada", "AwayTeam")]
-        elif int(golosH)-int(golosA)>2:
-            return [(jogo, "Goleada", "HomeTeam")]
+    def createTriples(self, game, AwayGols, HomeGols):        
+        if int(AwayGols)-int(HomeGols)>3 :
+            return [(game, "G", "AwayTeam")] #G means that the AwayTeam "Trashed" the home team (Trashed = Goleada)
+        elif int(HomeGols)-int(AwayGols)>3:
+            return [(game, "G", "HomeTeam")]
         return [(None, None, None)]

@@ -1,0 +1,65 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Classificação da Liga Portuguesa de Futebol</title>
+    <style>
+        table{
+
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {background-color: #d5d5d5}
+
+    </style>
+</head>
+<body>
+    <h1>Classificação da Liga Portuguesa de Futebol</h1>
+    <h2>Época 2014/2015</h2>
+
+    <div style="overflow-x:auto;">
+
+    <table>
+
+        <tr>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Posição</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Equipa</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Pontos</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Vitórias</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Empates</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Derrotas</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Golos Marcados</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Golos Sofridos</th>
+          <th style="padding:0 15px 0 15px; background-color: #cccccc">Diferença de Golos</th>
+        </tr>
+        {% for r in classList %}
+        <tr>
+          <th style="padding:0 15px 0 15px;"> {{ r.0 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.1 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.2 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.3 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.4 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.5 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.6 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.7 }}</th>
+          <th style="padding:0 15px 0 15px;"> {{ r.8 }}</th>
+
+        </tr> 
+        {% endfor %}
+    </table>
+</div>
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -55,19 +55,19 @@ class simpleGraph:
             # print("removing", self._spx[i], "at position", i)
             if sub == None and pred == None and obj == None:  # None None None
                 del self._spx[i]
-            if sub == None and pred == None and obj == self._spx[i][2]:  # None None Obj
+            elif sub == None and pred == None and obj == self._spx[i][2]:  # None None Obj
                 del self._spx[i]
-            if sub == self._spx[i][0] and pred == None and obj == None:  # Sub None None
+            elif sub == self._spx[i][0] and pred == None and obj == None:  # Sub None None
                 del self._spx[i]
-            if sub == None and pred == self._spx[i][1] and obj == None:  # None Pred None
+            elif sub == None and pred == self._spx[i][1] and obj == None:  # None Pred None
                 del self._spx[i]
-            if sub == self._spx[i][0] and pred == self._spx[i][1] and obj == None:  # Sub Pred None
+            elif sub == self._spx[i][0] and pred == self._spx[i][1] and obj == None:  # Sub Pred None
                 del self._spx[i]
-            if sub == None and pred == self._spx[i][1] and obj == self._spx[i][2]:  # None Pred Obj
+            elif sub == None and pred == self._spx[i][1] and obj == self._spx[i][2]:  # None Pred Obj
                 del self._spx[i]
-            if sub == self._spx[i][0] and pred == None and obj == self._spx[i][2]:  # Sub None Obj
+            elif sub == self._spx[i][0] and pred == None and obj == self._spx[i][2]:  # Sub None Obj
                 del self._spx[i]
-            if sub == self._spx[i][0] and pred == self._spx[i][1] and obj == self._spx[i][2]:
+            elif sub == self._spx[i][0] and pred == self._spx[i][1] and obj == self._spx[i][2]:
                 del self._spx[i]
 
     def triples(self, sub, pred, obj):

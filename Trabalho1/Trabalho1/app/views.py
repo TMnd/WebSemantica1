@@ -6,29 +6,148 @@ import sys
 
 from django.shortcuts import render
 from django.http import HttpRequest
+from django.http import HttpResponse
 from django.template import RequestContext
 from datetime import datetime
 from app.simpleGraph import simpleGraph
 from app.forms import addTripleStore
 from app.forms import removeTripleStore
 from app.forms import pesquisarTripleStore
-#from app.forms import gameSelectChoices
+from app.inferencerule import *
 from pathlib import Path
 from graphviz import Source
+import operator
 
+
+#x = simpleGraph()
 sg = simpleGraph()
+
 my_file = Path("triplos.csv")
 if my_file.is_file():
     print("A dar load ao ficheiro...")
+    #x.load("triplos.csv")
     sg.load("triplos.csv")
 else: 
     print("O ficheiro nao foi encontrado")
 
-print("Load efectuado!")
+#Inferences
+g = routRule()
+sg.applyinference(g)
+
+
+def classificacao(request):
+    assert isinstance(request, HttpRequest)
+
+    equipas = []
+    for i in sg.triples(None, 'HomeTeam', None):
+        if i[2] not in equipas:
+            equipas.append(i[2])
+
+    dataset = []
+    for i in sg.triples(None, 'HomeTeam', None):
+        dataset.append(i)
+    for i in sg.triples(None, 'AwayTeam', None):
+        dataset.append(i)
+    for i in sg.triples(None, 'FTHG', None):
+        dataset.append(i)
+    for i in sg.triples(None, 'FTAG', None):
+        dataset.append(i)
+    for i in sg.triples(None, 'FTR', None):
+        dataset.append(i)
+
+    ids = []
+    for j in sg.triples(None, 'HomeTeam', None):
+        ids.append(j[0])
+
+    jogos = {}
+    for i in ids:
+        estatisticas = []
+        for j in dataset:
+            if i == j[0]:
+                estatisticas.append(j[2])
+        jogos[i] = estatisticas
+
+    equipas = {}
+    for i in jogos:
+        if jogos[i][0] not in equipas:
+            equipas[jogos[i][0]] = [0, 0, 0, 0, 0, 0, 0]  #pontos, vitorias, empates, derrotas, golos marcados, golos sofridos, diferença de golos
+
+        if jogos[i][2] > jogos[i][3]:  # casa > fora
+            for j in equipas:
+
+                if jogos[i][0] == j:  # casa
+                    equipas[j][0] += 3  # casa +3 pontos
+                    equipas[j][1] += 1  # nº vitorias casa
+
+                    equipas[j][4] += int(jogos[i][2])  # golos marcados pela equipa da casa
+                    equipas[j][5] += int(jogos[i][3])  # golos sofridos pela equipa da casa
+
+                if jogos[i][1] == j:  # fora
+                    equipas[j][3] += 1  # nº derrotas fora
+
+                    equipas[j][4] += int(jogos[i][3])  # golos marcados pela equipa da fora
+                    equipas[j][5] += int(jogos[i][2])  # golos sofridos pela equipa da fora
+
+        elif jogos[i][2] == jogos[i][3]:  # casa == fora
+            for j in equipas:
+
+                if jogos[i][0] == j:  # casa
+                    equipas[j][0] += 1  # casa +1 ponto
+                    equipas[j][2] += 1  # nº empates casa
+                    equipas[j][4] += int(jogos[i][2])  # golos marcados pela equipa da casa
+                    equipas[j][5] += int(jogos[i][3])  # golos sofridos pela equipa da casa
+
+                if jogos[i][1] == j:  # fora
+                    equipas[j][0] += 1  # fora +1 ponto
+                    equipas[j][2] += 1  # nº empates fora
+
+                    equipas[j][4] += int(jogos[i][3])  # golos marcados pela equipa da fora
+                    equipas[j][5] += int(jogos[i][2])  # golos sofridos pela equipa da fora
+
+        elif jogos[i][2] < jogos[i][3]:  # casa < away
+            for j in equipas:
+
+                if jogos[i][0] == j:  # casa
+                    equipas[j][3] += 1  # nº derrotas casa
+
+                    equipas[j][4] += int(jogos[i][2])  # golos marcados pela equipa da casa
+                    equipas[j][5] += int(jogos[i][3])  # golos sofridos pela equipa da casa
+
+                if jogos[i][1] == j:  # fora
+                    equipas[j][0] += 3  # fora +3 pontos
+                    equipas[j][1] += 1  # nº vitorias fora
+
+                    equipas[j][4] += int(jogos[i][3])  # golos marcados pela equipa da fora
+                    equipas[j][5] += int(jogos[i][2])  # golos sofridos pela equipa de fora
+
+                equipas[j][6] = equipas[j][4] - equipas[j][5]  # diferença de golos
+
+    equipas = sorted(equipas.items(), key=operator.itemgetter(1))
+    posicoes = []
+    for i in range(len(equipas)):
+        posicoes.append(i+1)
+    
+    classificacao = []
+    for i, j in zip(reversed(range(len(equipas))), posicoes):
+        classificacao.append([j, equipas[i][0], equipas[i][1][0], equipas[i][1][1], equipas[i][1][2], equipas[i][1][3], equipas[i][1][4], equipas[i][1][5], equipas[i][1][6]])
+
+    #print("Posição", "Equipa", "Pontos", "Vitórias", "Empates", "Derrotas", "Golos Marcados", "Golos Sofridos", "Diferença de Golos")
+    #for i, j in zip(reversed(range(len(equipas))), posicoes):
+            #print(j, equipas[i][0], equipas[i][1][0], equipas[i][1][1], equipas[i][1][2], equipas[i][1][3], equipas[i][1][4], equipas[i][1][5], equipas[i][1][6])
+
+
+    return render(
+        request, 
+        'app/classificacao.html',
+        {
+        'classList':classificacao
+        }
+    )
 
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
+
     return render(
         request,
         'app/index.html',
@@ -55,7 +174,8 @@ def jogo(request):
     FTHG = None
     FTAG = None
     FTR = None
-
+    Gols = False #para a goleada
+    
     teams = sg.query([('?id_jogo','HomeTeam','?TeamName')])
     for TeamName in teams:
         team = TeamName.get("TeamName")
@@ -89,20 +209,35 @@ def jogo(request):
                                    ('?id_jogo', 'BWD', '?DrawOddsBW'),
                                    ('?id_jogo', 'BWA', '?WinAwayOddsBW')])
 
-        print(gameInformation)
+        print(str(gameInformation))
 
         for i in gameInformation:
             B365H = i.get('WinHomeOddsB365')
+            print(B365H)
             B365D = i.get('DrawOddsB365')
+            print(B365D)
             B365A = i.get('WinAwayOddsB365')
+            print(B365A)
             BWH = i.get('WinHomeOddsBW')
+            print(BWH)
             BWD = i.get('DrawOddsBW')
+            print(BWD)
             BWA = i.get('WinAwayOddsBW')
+            print(BWA)
             FTHG = i.get('GolsHome')
+            print(FTHG)
             FTAG = i.get('GolsAway')
+            print(FTAG)
             FTR = i.get('FinalResult')
+            print(FTR)
+            G = i.get('id_jogo')
+            generator = sg.triples(G,'G', None)
+            for ola in generator:
+                Gols = True  #se existir um triplo com o predicado G
+        
 
-    return render(request,'app/jogo.html',{'title':'Game','message':'Chose the teams','teamlist':TeamsList,'NotSameTeam':NotSameTeam,'aux':aux,'HomeTeam':HomeTeam,'AwayTeam':AwayTeam,'B365H':B365H,'B365D':B365D,'B365A':B365A,'BWH':BWH,'BWD':BWD,'BWA':BWA,'FTHG':FTHG,'FTAG':FTAG,'FTR':FTR})
+
+    return render(request,'app/jogo.html',{'title':'Game','message':'Chose the teams','teamlist':TeamsList,'NotSameTeam':NotSameTeam,'aux':aux,'HomeTeam':HomeTeam,'AwayTeam':AwayTeam,'B365H':B365H,'B365D':B365D,'B365A':B365A,'BWH':BWH,'BWD':BWD,'BWA':BWA,'FTHG':FTHG,'FTAG':FTAG,'FTR':FTR,'Gols':Gols})
 
 def about(request):
     """Renders the about page."""
