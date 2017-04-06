@@ -1,0 +1,36 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>{{ titleInserirDados }}</h2>
+        <form action="{% url 'operations' %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" name ="inserirDados" value="Submit">
+        </form>
+        <hr>
+        <h2>{{titleEliminarDados}}</h2>
+        <form action="{% url 'operations' %}" method="post">
+            {% csrf_token %}
+            {{ removeform }}
+            <input type="submit" name ="removerDados" value="Submit">
+        </form>
+        <hr>
+        <h2>{{titlePesquisarDados}}</h2>
+        <form action="{% url 'operations' %}" novalidate method="post">
+            {% csrf_token %}
+            {{ removeform }}
+            <input type="submit" name ="pesquisarDados" value="Submit">
+        </form>
+        <br />
+        {{listaPesquisa}}
+        <hr>
+        <h2>{{titleLista}}</h2>
+        {{ listaTriplos }}
+    </div>
+</div>
+
+{% endblock %}

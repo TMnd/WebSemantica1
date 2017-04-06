@@ -34,6 +34,19 @@ else:
 g = routRule()
 sg.applyinference(g)
 
+bs = benficaSporting()
+sb = sportingBenfica()
+bp = benficaPorto()
+pb = portoBenfica()
+sp = sportingPorto()
+ps = portoSporting()
+
+sg.applyinference(bs)
+sg.applyinference(sb)
+sg.applyinference(bp)
+sg.applyinference(pb)
+sg.applyinference(sp)
+sg.applyinference(ps)
 
 def classificacao(request):
     assert isinstance(request, HttpRequest)
